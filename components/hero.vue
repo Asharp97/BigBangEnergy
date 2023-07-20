@@ -58,7 +58,10 @@ export default {
   }
 
   .slider {
-    width: fit-content;
+    width: 60%;
+    height: 663px;
+    display: flex;
+    align-items: center;
   }
 }
 </style>
