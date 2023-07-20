@@ -42,6 +42,7 @@ export default defineComponent({
 .image {
   width: 190%;
   border-radius: 25px;
+  margin-block: 12px;
 }
 
 .carousel__slide {
@@ -65,6 +66,7 @@ export default defineComponent({
 .carousel__slide {
   opacity: 0.9;
   transform: rotateY(-20deg) scale(0.9);
+  opacity: 0;
 }
 
 .carousel__slide--active~.carousel__slide {
@@ -75,18 +77,20 @@ export default defineComponent({
   opacity: 1;
   transform: rotateY(-10deg) scale(0.95);
   z-index: 5;
+  opacity: 1;
 }
 
 .carousel__slide--next {
   opacity: 1;
   transform: rotateY(10deg) scale(0.95);
   z-index: 5;
+  opacity: 1;
 }
 
 .carousel__slide--active {
   opacity: 1;
   transform: rotateY(0) scale(1.1);
   z-index: 10;
-
+  opacity: 1;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <hero />
+    <aboutus/>
   </div>
 </template>
 
