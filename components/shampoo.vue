@@ -1,19 +1,21 @@
 <template>
   <div class="container comp">
-    <div class="imgDiv">
-      <img src="../assets/comp2.png" alt="">
-    </div>
     <div class="textdiv">
-      <h3>Hakkımızda</h3>
-      <p>BigBang Energy olarak, müşterilerimize en kaliteli vitaminleri sunmayı taahhüt ediyoruz. Ürünlerimiz doğal
-        içeriklerle formüle edilir ve her biri sağlık uzmanları tarafından titizlikle incelenir. Sağlığınızı desteklemek
-        amacıyla geniş bir ürün yelpazemiz bulunmaktadır. Vitamin desteğine ihtiyaç duyduğunuzda, doğru ürünü seçmenize
-        yardımcı olmak için uzman ekibimiz her zaman hizmetinizdedir.
+      <h3>Şampuanlar</h3>
+      <p>Vitaminler, vücudumuzun normal işlevlerini sürdürebilmesi için gerekli olan organik bileşiklerdir. Vücut, çoğu
+        vitamin üretemez, bu nedenle dengeli bir diyetle vitamin alımını sağlamak hayati öneme sahiptir. Her bir vitaminin
+        farklı fonksiyonları ve sağlık yararları vardır.
+
+        Lorem ipsum dolor sit amet consectetur. Scelerisque varius et scelerisque at vel scelerisque magna. Faucibus augue
+        rhoncus porttitor sagittis orci quis.
       </p>
       <p>
         Sağlıklı bir gelecek için doğru adım atın ve BigBang Energy ile sağlığınıza değer katın! Unutmayın, sağlıklı bir
         yaşam için doğru beslenme önemlidir ve doğru vitaminler, enerjinizi artırmanıza ve günlük zorluklarla başa
         çıkmanıza yardımcı olur.</p>
+    </div>
+    <div class="imgDiv">
+      <img src="../assets/shampoo.png" alt="">
     </div>
   </div>
 </template>
@@ -26,29 +28,33 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/variabls.scss";
+
 .comp {
   display: flex;
-  padding-block: 40px;
+
   justify-content: space-between;
-  .imgDiv{
+
+  .imgDiv {
     width: 55%;
-    img{
+
+    img {
       width: 100%;
     }
   }
+
   .textdiv {
     color: $primary;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
-    h3{
+
+    h3 {
       font-size: 30px;
     }
-    p{
+
+    p {
       font-size: 16px;
     }
   }
-}
-</style>
+}</style>

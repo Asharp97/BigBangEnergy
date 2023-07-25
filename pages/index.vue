@@ -1,7 +1,11 @@
 <template>
   <div>
     <hero />
-    <aboutus/>
+    <aboutus />
+    <vitaminler />
+    <vitamincontent />
+    <prodport />
+    <shampoo />
   </div>
 </template>
 

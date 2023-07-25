@@ -5,7 +5,7 @@
       <p>Biz, BigBang Energy, sizlere doğal ve kaliteli vitaminleri ve besin desteklerini sunarak daha sağlıklı bir yaşam
         için sizlere destek olmaktan gurur duyuyoruz.
       </p>
-      <div class="discover cont">Ürünleri Keşfet</div>
+      <div class="discover button">Ürünleri Keşfet</div>
     </div>
     <div class="slider">
       <slider />
@@ -37,6 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/variabls.scss";
 .hero {
   display: flex;
   justify-content: space-between;
@@ -48,13 +49,14 @@ export default {
     align-items: flex-start;
     font-size: 16px;
     width: 30%;
+    color: $primary;
 
     .logo{
       width: 303px;
     }
   }
   .discover{
-    padding: 12px;
+
   }
 
   .slider {

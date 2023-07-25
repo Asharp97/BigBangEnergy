@@ -1,35 +1,60 @@
 <template>
-  <div class="foot-bg">
-    <div class="footer container">
-      <div class="foot ">
-        <div class="logo">
-          <img src="../assets/whiteLogo.png" alt="">
-        </div>
-        <ul>
-          <NuxtLink to="/" class="li">
-            <div class="li"> Anasayfa</div>
-          </NuxtLink>
-          <NuxtLink to="/" class="li">
-            <div class="li"> Kurumsal</div>
-          </NuxtLink>
-          <NuxtLink to="/" class="li">
-            <div class="li"> Ürün Porföyümüz</div>
-          </NuxtLink>
-          <NuxtLink to="/" class="li">
-            <div class="li"> İletişim</div>
-          </NuxtLink>
-        </ul>
+  <div>
+    <div class="top container">
+
+      <div class="section bet">
+        <img src="../assets/logo.png" alt="">
+        <span>Copyright to Big Bang Energy </span>
       </div>
-      <div class="subfoot">
-        <div>
-          Copyright to Big Bang Energy
+
+      <div class="section">
+        <h2>Kurumsal</h2>
+        <h3>Kalite Politikamız</h3>
+        <h3>Çevre Politikamız</h3>
+        <h3>İSG Politikamız</h3>
+        <h3>Tesisimiz</h3>
+        <h3>Sertifikalarımız</h3>
+      </div>
+      <div class="section">
+        <h2>Ürünlerimiz</h2>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+      </div>
+      <div class="section">
+        <h2>Üretim Portföyümüz</h2>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+      </div>
+      <div class="section">
+        <h2>İletişim</h2>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+        <h3>Kalite Politikamız</h3>
+      </div>
+
+    </div>
+    <div class="bot-bg">
+      <div class="bot container">
+        <div class="section">
+          <Icon name="material-symbols:location-on-outline" />
+          <span>Akçaburgaz Mahallesi 3080 Sok. <br> No:4 Esenyurt- İstanbul/Türkiye</span>
         </div>
-        <div class="langs">
-          <div class="lang">dr</div>
-          <div class="lang">dr</div>
-          <div class="lang">dr</div>
-          <div class="lang">dr</div>
-          <div class="lang">dr</div>
+        <div class="section">
+          <Icon name="material-symbols:mail" />
+          <span>bigbang-energy.com.tr</span>
+        </div>
+        <div class="section">
+          <Icon name="material-symbols:call" />
+          <span>+271 386-647-3637</span>
         </div>
       </div>
     </div>
@@ -43,51 +68,58 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.foot-bg {
-  background-color: #084f9e;
-  color: white;
+@import "../assets/scss/variabls.scss";
 
-  .footer {
+.top {
+  display: flex;
+  justify-content: space-evenly;
+
+  .section {
     display: flex;
     flex-direction: column;
-    height: 375px;
-    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+    margin-block: 40px;
 
-    .foot {
-      display: flex;
-      justify-content: space-between;
-
-      // .logo {
-      //   img {}
-      // }
-
-      ul {
-        display: flex;
-        .li {
-          text-decoration: none;
-          color: inherit;
-          padding-inline: 12px;
-          padding-block: 3px;
-          display: flex;
-          align-items: center;
-        }
-      }
+    h2 {
+      color: $primary;
+      font-size: 16px;
+      font-weight: 700;
     }
 
-    .subfoot {
+    h3 {
+      color: #77808B;
+      font-weight: 400;
+    }
+
+    img {
+      height: 87px;
+      filter: grayscale(100%);
+    }
+  }
+
+  .bet {
+    justify-content: space-between !important;
+  }
+}
+
+.bot-bg {
+  background-color: $primary ;
+  color: white;
+  height: 112px;
+  align-items: center;
+  display: flex;
+  .bot {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+
+    .section {
+      padding-block: 12px;
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
 
-      .langs {
-        display: flex;
-        gap: 12px;
-
-        .lang {
-          border-radius: 50%;
-          border: white 1px solid;
-          padding: 10px;
-        }
-      }
     }
   }
 }

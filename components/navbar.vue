@@ -24,19 +24,19 @@
     <header>
       <NuxtLink to="/"><img class="logo" src="../assets/logo.png" alt=""></NuxtLink>
       <ul>
-        <NuxtLink class="li" to="/commercial">
-          <div class="li"> Kumursal</div>
+        <NuxtLink class="list" to="/commercial">
+          <div class="list"> Kumursal</div>
         </NuxtLink>
-        <NuxtLink class="li" to="/products">
-          <div class="li"> Ürunlerimiz
+        <NuxtLink class="list" to="/products">
+          <div class="list"> Ürunlerimiz
             <Icon name="ci:caret-down-md" />
           </div>
         </NuxtLink>
-        <NuxtLink class="li" to="/about">
-          <div class="li"> Üretim Portöyümüz</div>
+        <NuxtLink class="list" to="/about">
+          <div class="list"> Üretim Portöyümüz</div>
         </NuxtLink>
-        <NuxtLink class="li " to="/contact">
-          <div class="li cont"> İletişim</div>
+        <NuxtLink class="list " to="/contact">
+          <div class="list"> İletişim</div>
         </NuxtLink>
       </ul>
     </header>
@@ -50,8 +50,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/variabls.scss";
+
 .top-bg {
-  background-color: #084f9e;
+  background-color: $primary;
+  height: 65px;
+  align-items: center;
+  display: flex;
 
   .top {
     color: white;
@@ -88,7 +93,7 @@ export default {
     ul {
       display: flex;
 
-      .li {
+      .list {
         text-decoration: none;
         color: inherit;
         padding-inline: 12px;
@@ -97,10 +102,12 @@ export default {
         align-items: center;
       }
 
-      .cont {
-        background-color: #084f9e;
-        color: white;
-        border-radius: 4px;
+      .router-link-active {
+        div {
+          background-color: $primary;
+          color: white;
+          border-radius: 4px;
+        }
       }
     }
   }
