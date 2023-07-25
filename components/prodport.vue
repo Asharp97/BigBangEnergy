@@ -2,16 +2,22 @@
   <div class="container comp">
     <div class="textdiv">
       <h3>Üretim Portföyümüz</h3>
-      <p>Günümüzde sağlıklı beslenme ve aktif yaşam tarzı, sağlığımızı koruma ve zindeliğimizi sürdürme konusunda büyük
-        önem taşımaktadır. Dengeli bir diyetin yanı sıra vücudumuzun ihtiyaç duyduğu vitamin ve mineralleri almak da yaşam
-        kalitemizi yükseltir. İşte bu noktada, vitaminli içecekler, vücudumuza doğal bir enerji kaynağı sağlamak için
-        harika bir seçenek olarak ön plana çıkar.
-
+      <p>BigBang Energy olarak, gururla sunmakta olduğumuz geniş üretim portföyümüz ile müşterilerimize çeşitlilik ve
+        kaliteyi bir arada sunuyoruz. Müşteri memnuniyetini temel ilke olarak benimseyen firmamız, farklı sektörlerden ve
+        ihtiyaçlardan müşterilerimize hitap eden ürünlerimizle her zaman yanınızdadır.
       </p>
-      <p>
-        Sağlıklı bir gelecek için doğru adım atın ve BigBang Energy ile sağlığınıza değer katın! Unutmayın, sağlıklı bir
-        yaşam için doğru beslenme önemlidir ve doğru vitaminler, enerjinizi artırmanıza ve günlük zorluklarla başa
-        çıkmanıza yardımcı olur.</p>
+      <div class="stepComp">
+
+        <img src="../assets\before.png" style="width:25px;" alt="">
+        <div class="steps">
+          <div class="step">Gıda güvenliği ve lezzeti bir araya getiren ürünlerimizle, damak zevkinizi tatmin etmeyi
+            hedefliyoruz.
+          </div>
+          <div class="step">Doğal ve taze içerikler kullanarak, özenle hazırladığımız gıda ve içecek ürünlerimizle
+            sofralarınıza lezzet katıyoruz.
+          </div>
+        </div>
+      </div>
     </div>
     <div class="imgDiv">
       <img src="../assets/prodport.png" alt="">
@@ -34,7 +40,7 @@ export default {
   justify-content: space-between;
 
   .imgDiv {
-    width: 55%;
+    width: 43%;
 
     img {
       width: 100%;
@@ -56,4 +62,14 @@ export default {
       font-size: 16px;
     }
   }
-}</style>
+  .stepComp{
+    display: flex;
+    gap: 10px;
+    .steps{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
+</style>

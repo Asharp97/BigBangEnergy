@@ -2,7 +2,9 @@
   <Carousel :itemsToShow="3.95" :wrapAround="true" :transition="500">
     <Slide v-for="slide in slides" :key="slide">
       <div class="carousel__item">
+        <!-- <img class="image" src="..\assets\slides\S1.png" alt=""> -->
         <img class="image" :src="slide" alt="">
+        <!-- :src="slide"  -->
       </div>
     </Slide>
     <template #addons>
@@ -28,10 +30,9 @@ export default defineComponent({
   data() {
     return {
       slides: [
-        'https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg',
-        'https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg',
-        'https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg',
-        'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg',
+        'http://bigbang-energy.com.tr/images/S1.png',
+        'http://bigbang-energy.com.tr/images/S2.png',
+        'http://bigbang-energy.com.tr/images/S3.png',
       ],
     }
   },
@@ -39,6 +40,32 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+.carousel__next,
+.carousel__prev {
+  :focus {
+    outline: none;
+  }
+
+  position: absolute;
+
+  .carousel__item {
+    .image {
+      width: 100% !important;
+    }
+  }
+}
+
+
+.carousel__item {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+
+
+
 .image {
   width: 190%;
   border-radius: 25px;
@@ -67,13 +94,17 @@ export default defineComponent({
   opacity: 0.9;
   transform: rotateY(-20deg) scale(0.9);
   opacity: 0;
+  width: 0px;
 }
+
+
 
 .carousel__slide--active~.carousel__slide {
   transform: rotateY(20deg) scale(0.9);
 }
 
 .carousel__slide--prev {
+
   opacity: 1;
   transform: rotateY(-10deg) scale(0.95);
   z-index: 5;
@@ -85,6 +116,14 @@ export default defineComponent({
   transform: rotateY(10deg) scale(0.95);
   z-index: 5;
   opacity: 1;
+
+}
+
+.carousel__slide--next,
+.carousel__slide--prev {
+
+  width: 160px !important;
+
 }
 
 .carousel__slide--active {
@@ -92,5 +131,7 @@ export default defineComponent({
   transform: rotateY(0) scale(1.1);
   z-index: 10;
   opacity: 1;
+  width: 280px !important;
+  height: 445px;
 }
 </style>

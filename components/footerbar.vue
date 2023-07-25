@@ -9,36 +9,33 @@
 
       <div class="section">
         <h2>Kurumsal</h2>
-        <h3>Kalite Politikamız</h3>
-        <h3>Çevre Politikamız</h3>
-        <h3>İSG Politikamız</h3>
-        <h3>Tesisimiz</h3>
-        <h3>Sertifikalarımız</h3>
+        <h4>Kalite Politikamız</h4>
+        <h4>Çevre Politikamız</h4>
+        <h4>İSG Politikamız</h4>
+        <h4>Tesisimiz</h4>
+        <h4>Sertifikalarımız</h4>
       </div>
       <div class="section">
         <h2>Ürünlerimiz</h2>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
+        <h4>Vitaminler</h4>
+        <h4>Vitaminli İçecekler</h4>
+        <h4>Şampuanlar</h4>
+        <h4>Takviye ediciler</h4>
+        <h4>Yeni ürünlerimiz</h4>
+        <h4>Contact Us</h4>
       </div>
       <div class="section">
         <h2>Üretim Portföyümüz</h2>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
+        <h4>Katı Üretim</h4>
+        <h4>Likit Üretim</h4>
+        <h4>Kozmetik Üretim</h4>
+
       </div>
       <div class="section">
         <h2>İletişim</h2>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
-        <h3>Kalite Politikamız</h3>
+        <h4>Mail Adresin</h4>
+        <input class="input" placeholder="Mail Adresin" />
+        <div class="button">İletişime Geç</div>
       </div>
 
     </div>
@@ -73,11 +70,11 @@ export default {
 .top {
   display: flex;
   justify-content: space-evenly;
-
+  height: 320px;
   .section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     margin-block: 40px;
 
@@ -87,7 +84,7 @@ export default {
       font-weight: 700;
     }
 
-    h3 {
+    h4 {
       color: #77808B;
       font-weight: 400;
     }
@@ -109,6 +106,7 @@ export default {
   height: 112px;
   align-items: center;
   display: flex;
+
   .bot {
     display: flex;
     justify-content: center;

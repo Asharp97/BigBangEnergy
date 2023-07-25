@@ -1,8 +1,9 @@
 <template>
   <div class="h1-bg">
     <div class="container">
+
       <div class="h1">
-        <h2>Kumursal</h2>
+        <h2>Kurumsal</h2>
         <p>Kalite ve süreç odaklı üretim anlayışı ile ürünlerimizin müşteriye aynı standartta ve en güvenli şekilde
           ulaşmasını sağlamak VEGA İlaç’ın temel amacıdır.
 
@@ -10,6 +11,7 @@
           ile
           kullanım alanlarını takip ederek müşterilerimizin hizmetine sunuyoruz.</p>
       </div>
+      <img src="http://bigbang-energy.com.tr/images/S2.png" alt="">
     </div>
   </div>
   <div class="h2 container">
@@ -137,9 +139,7 @@ export default {
     }
   }
 
-  .rev {
-
-  }
+  .rev {}
 }
 
 .h3,
@@ -179,4 +179,5 @@ export default {
 p,
 h2 {
   color: $primary;
-}</style>
+}
+</style>

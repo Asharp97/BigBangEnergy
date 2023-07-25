@@ -25,7 +25,7 @@
       <NuxtLink to="/"><img class="logo" src="../assets/logo.png" alt=""></NuxtLink>
       <ul>
         <NuxtLink class="list" to="/commercial">
-          <div class="list"> Kumursal</div>
+          <div class="list"> Kurumsal</div>
         </NuxtLink>
         <NuxtLink class="list" to="/products">
           <div class="list"> Ürunlerimiz
@@ -81,6 +81,8 @@ export default {
 
 .bot {
   padding-block: 12px;
+  color: $primary;
+
 
   header {
     display: flex;
@@ -88,6 +90,7 @@ export default {
 
     .logo {
       height: 73px;
+      padding-block: 20px;
     }
 
     ul {

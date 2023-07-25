@@ -1,20 +1,7 @@
 <template>
   <div>
-    <div class="section sci">
-      <div class="container">
-
-        <h1>Üretim Portföyümüz</h1>
-        <p>Tarım Bakanlığı ruhsatlı tablet, kapsül, toz ve likit formunda, Sağlık Bakanlığı bildirim belgeli krem, likit
-          ve
-          toz grubu dermokozmetik markalarımızı ve ayrıca private label olarak ta üretimleri yapmaktayız.
-        </p>
-        <p>
-          Üretim tesisi HACCP kurallarına uygun 5 katlı olup iki katı yaygın üretim sistemi olarak dizayn
-          edilmiştir.Üretim
-          ve ambalajlama bölümlerinde, esnek kapasite ve yüksek hıza sahip olan üretim ve ambalaj hatları
-          kullanılmaktadır.
-        </p>
-      </div>
+    <div class="section">
+      
     </div>
     <div class="section">
       <div class="lists ">
@@ -54,7 +41,7 @@
                 Takviye edici gıda üretimi konusunda çiğnenebilir yumuşak jel üretim bandımız</p>
             </div>
           </div>
-          <div class="list bg">
+          <div class="list">
             <div class="content">
               <h2>Likit Üretim</h2>
               <div>
@@ -93,7 +80,6 @@
     <div class="section colors">
       <div class="container">
         <div class="whitebg">
-
           <h1>Kozmetik Üretim</h1>
           <p>Kişisel bakım, temizlik ürünleri,dermokozmetik’ten diş macununa kadar 1500 den fazla ürün gamına üretim
             yapılmaktadır.</p>
@@ -116,6 +102,9 @@ export default {
 .section {
   color: $primary;
 
+  .h1 {
+    display: flex;
+  }
 
   h1 {}
 

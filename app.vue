@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 85%;
   margin-inline: auto;
 }
 
@@ -55,6 +55,7 @@ body {
   background-color: #084f9e;
   color: white;
   padding-block: 12px;
+  padding-inline: 12px;
   border-radius: 5px;
 
   &:before {
@@ -62,15 +63,30 @@ body {
   }
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
 .button {
   background-color: #084f9e;
   color: white;
-  border-radius: 4px;
-  padding: 12px;
+  border-radius: 12px;
+  padding-inline: 20px;
+  padding-block: 12px;
+
+  font-size: 14px;
 }
 
-.whitebg{
+.whitebg {
   background: rgba(255, 255, 255, 0.80);
   width: 100%;
+}
+
+.input{
+  border:1px solid $primary;
+  padding: 12px;
+  border-radius: 8px;
+  
 }
 </style>

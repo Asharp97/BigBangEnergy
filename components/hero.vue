@@ -45,7 +45,7 @@ export default {
   .textDiv {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     font-size: 16px;
     width: 30%;
@@ -61,7 +61,7 @@ export default {
 
   .slider {
     width: 60%;
-    height: 663px;
+    // height: 663px;
     display: flex;
     align-items: center;
   }

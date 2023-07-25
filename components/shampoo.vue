@@ -9,7 +9,7 @@
         Lorem ipsum dolor sit amet consectetur. Scelerisque varius et scelerisque at vel scelerisque magna. Faucibus augue
         rhoncus porttitor sagittis orci quis.
       </p>
-      <p>
+      <p class="rev">
         Sağlıklı bir gelecek için doğru adım atın ve BigBang Energy ile sağlığınıza değer katın! Unutmayın, sağlıklı bir
         yaşam için doğru beslenme önemlidir ve doğru vitaminler, enerjinizi artırmanıza ve günlük zorluklarla başa
         çıkmanıza yardımcı olur.</p>
@@ -47,7 +47,8 @@ export default {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
 
     h3 {
       font-size: 30px;

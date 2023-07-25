@@ -31,7 +31,7 @@ export default {
   padding-block: 40px;
   justify-content: space-between;
   .imgDiv{
-    width: 55%;
+    width: 50%;
     img{
       width: 100%;
     }
@@ -42,9 +42,12 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-right: 28px;
     
     h3{
       font-size: 30px;
+      font-weight: 400;
+      
     }
     p{
       font-size: 16px;

@@ -6,9 +6,11 @@
         vitamin üretemez, bu nedenle dengeli bir diyetle vitamin alımını sağlamak hayati öneme sahiptir. Her bir vitaminin
         farklı fonksiyonları ve sağlık yararları vardır.
       </p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur sint natus doloremque hic quidem
+      <p class=" rev">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur sint natus doloremque
+        hic quidem
         praesentium totam debitis, aperiam ad perspiciatis dicta mollitia unde provident quibusdam sed excepturi quasi
         dolor.</p>
+      <img src="../assets\plant2.png" class="plant2" alt="">
     </div>
     <div class="imgDiv">
       <img src="../assets/vitamins.png" alt="">
@@ -27,23 +29,33 @@ export default {
 
 .comp {
   display: flex;
-
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   .imgDiv {
-    width: 55%;
+    width: 50%;
 
     img {
       width: 100%;
     }
   }
 
+
   .textdiv {
-    color: $primary;
-    width: 40%;
+    color: #084f9e;
+    width: 36%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    position: relative;
+    gap: 40px;
+
+    .plant2 {
+      position: absolute;
+      top: 38px;
+      left: -177px;
+      width: 60%;
+      z-index: -100;
+    }
 
     h3 {
       font-size: 30px;
