@@ -52,7 +52,8 @@ export default {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    // gap: 40px;
 
     h3 {
       font-size: 30px;

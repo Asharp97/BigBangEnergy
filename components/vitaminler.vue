@@ -63,6 +63,7 @@ export default {
 
     p {
       font-size: 16px;
+      padding-inline: 12px;
     }
   }
 }

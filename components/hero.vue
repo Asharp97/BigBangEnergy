@@ -2,9 +2,8 @@
   <div class="hero container">
     <div class="textDiv">
       <img class="logo" src="../assets/logo.png" alt="">
-      <p>Biz, BigBang Energy, sizlere doğal ve kaliteli vitaminleri ve besin desteklerini sunarak daha sağlıklı bir yaşam
-        için sizlere destek olmaktan gurur duyuyoruz.
-      </p>
+      <p>Biz, BigBang Energy, sizlere doğal ve kaliteli vitaminleri ve besin desteklerini sunarak daha sağlıklı bir yaşam</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur minima ab fugit distinctio possimus </p>
       <div class="discover button">Ürünleri Keşfet</div>
     </div>
     <div class="slider">
@@ -38,10 +37,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/variabls.scss";
+
 .hero {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   .textDiv {
     display: flex;
     flex-direction: column;
@@ -51,13 +52,12 @@ export default {
     width: 30%;
     color: $primary;
 
-    .logo{
+    .logo {
       width: 303px;
     }
   }
-  .discover{
 
-  }
+  .discover {}
 
   .slider {
     width: 60%;

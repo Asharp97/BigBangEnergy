@@ -22,11 +22,16 @@ export default {
   margin: 0;
   font-family: 'Inter', sans-serif;
 
+  body {
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+    background-color: #fff;
+    overflow-x: hidden;
+  }
 }
 
-body {
-  background-color: #fff;
-}
 
 .container {
   width: 85%;
@@ -51,11 +56,12 @@ body {
   }
 }
 
+
 .rev {
   background-color: #084f9e;
-  color: white;
+  color: white !important;
   padding-block: 12px;
-  padding-inline: 12px;
+  // padding-inline: 12px;
   border-radius: 5px;
 
   &:before {
@@ -81,12 +87,21 @@ h3 {
 .whitebg {
   background: rgba(255, 255, 255, 0.80);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
 }
 
-.input{
-  border:1px solid $primary;
+.input {
+  border: 1px solid $primary;
   padding: 12px;
   border-radius: 8px;
-  
+}
+.gap{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 </style>

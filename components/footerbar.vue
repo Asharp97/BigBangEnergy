@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="forDetails">
+      Privat Label üretim yapılır. Detaylı bilgi için iletişime geçiniz.
+    </div>
     <div class="top container">
 
       <div class="section bet">
@@ -67,10 +70,23 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/variabls.scss";
 
+.forDetails {
+  margin-inline: auto;
+  margin-block: 80px;
+  padding-block: 12px;
+  padding-inline: 24px;
+  background-color: #8CD5DE;
+  color: #084F9E;
+  border-radius: 8px;
+  width: fit-content;
+
+}
+
 .top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 320px;
+
   .section {
     display: flex;
     flex-direction: column;
@@ -109,8 +125,7 @@ export default {
 
   .bot {
     display: flex;
-    justify-content: center;
-    gap: 2%;
+    justify-content: space-evenly;
 
     .section {
       padding-block: 12px;

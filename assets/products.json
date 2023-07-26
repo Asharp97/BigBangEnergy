@@ -1,0 +1,396 @@
+{
+  "vitamins": [
+    {
+      "id": 1,
+      "img": "https://",
+      "table": "",
+      "name": "Sumbucus Kids",
+      "tablet": "30 ÇİĞNEME TABLETİ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Yorgunluk ve bitkinliğin azalmasına katkıda bulunur.Enerji oluşum metabolizmasına katkıda bulunur. "
+        },
+        {
+          "header": "Çinko;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur.A vitaminin normal metabolizmasına katkıda bulunur.Kemiklerin, saçın, tırnakların, cildin, görme yetisinin korunmasına katkıda bulunur. "
+        },
+        {
+          "header": "B1, B2, B3, B5, B6, B12 Vitamini;",
+          "content": "Normal enerji oluşum mekanizmasına katkıda bulunur."
+        },
+        {
+          "header": "B12 Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        },
+        {
+          "header": "A Vitamini;",
+          "content": "Normal demir metabolizmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        },
+        {
+          "header": "D Vitamini;",
+          "content": "Normal kas fonksiyonunun korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "https://",
+      "table": "",
+      "name": "Sumbucus Nigra",
+      "tablet": "30 ÇİĞNEME TABLETİ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Yorgunluk ve bitkinliğin azalmasına katkıda bulunur.Enerji oluşum metabolizmasına katkıda bulunur. "
+        },
+        {
+          "header": "Çinko;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur.A vitaminin normal metabolizmasına katkıda bulunur.Kemiklerin, saçın, tırnakların, cildin, görme yetisinin korunmasına katkıda bulunur. "
+        },
+        {
+          "header": "B2, B3, B5, B6, B12 Vitamini;",
+          "content": "Yorgunluk ve bitkinliğin azalmasına katkıda bulunur."
+        },
+        {
+          "header": "B12 Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        },
+        {
+          "header": "A Vitamini;",
+          "content": "Normal demir metabolizmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        },
+        {
+          "header": "D Vitamini;",
+          "content": "Normal kas fonksiyonunun korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "img": "https://",
+      "table": "",
+      "name": "Sumbucus Nigra",
+      "tablet": "PROPOLIS COMPLEX E FERVESAN 20        ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Yorgunluk ve bitkinliğin azalmasına katkıda bulunur.Enerji oluşum metabolizmasına katkıda bulunur. "
+        },
+        {
+          "header": "Çinko;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur.A vitaminin normal metabolizmasına katkıda bulunur.Kemiklerin, saçın, tırnakların, cildin, görme yetisinin korunmasına katkıda bulunur. "
+        },
+        {
+          "header": "D Vitamini;",
+          "content": "Normal kas fonksiyonunun korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        },
+        {
+          "header": "Propolis;",
+          "content": "Bağışıklık sistemini destekler."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "img": "https://",
+      "table": "",
+      "name": "Multivitamin",
+      "tablet": "30 TABLET",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Yorgunluk ve bitkinliğin azalmasına katkıda bulunur.Enerji oluşum metabolizmasına katkıda bulunur. "
+        },
+        {
+          "header": "Çinko;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur.A vitaminin normal metabolizmasına katkıda bulunur.Kemiklerin, saçın, tırnakların, cildin, görme yetisinin korunmasına katkıda bulunur. "
+        },
+        {
+          "header": "D Vitamini;",
+          "content": "Normal kas fonksiyonunun korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur."
+        },
+        {
+          "header": "Propolis;",
+          "content": "Bağışıklık sistemini destekler."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "img": "https://",
+      "table": "",
+      "name": "Vitamin D3 K2",
+      "tablet": "60 YUMUŞAK KAPSÜL",
+      "details": [
+        {
+          "content": "Normal kemiklerin korunmasına katkıda bulunur. Kas fonksiyonunun korunmasına katkıda bulunur. Kalsiyumun ve fosforun normal emilimine / kullanımına katkıda bulunur. Dişlerin korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Kan kalsiyum düzeyine katkıda bulunur. Hücre bölünmesinde görevi vardır."
+        },
+        {
+          "header": "Vitamin K;",
+          "content": "Normal kemiklerin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "img": "https://",
+      "table": "",
+      "name": "Selenyum",
+      "tablet": "60 TABLET",
+      "details": [
+        {
+          "content": "Normal saçın korunmasına katkıda bulunur. Tırnakların korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Normal tiroit fonksiyonuna katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "img": "https://",
+      "table": "",
+      "name": "Biotin",
+      "tablet": "30 TABLET",
+      "details": [
+        {
+          "content": "Normal kemiklerin korunmasına katkıda bulunur. Kas fonksiyonunun korunmasına katkıda bulunur. Kalsiyumun ve fosforun normal emilimine / kullanımına katkıda bulunur. Dişlerin korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Kan kalsiyum düzeyine katkıda bulunur. Hücre bölünmesinde görevi vardır."
+        },
+        {
+          "header": "Vitamin K;",
+          "content": "Normal kemiklerin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "img": "https://",
+      "table": "",
+      "name": "Omega 3",
+      "tablet": "30 YUMUŞAK KAPSÜL",
+      "details": [
+        {
+          "content": "Normal kemiklerin korunmasına katkıda bulunur. Kas fonksiyonunun korunmasına katkıda bulunur. Kalsiyumun ve fosforun normal emilimine / kullanımına katkıda bulunur. Dişlerin korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Kan kalsiyum düzeyine katkıda bulunur. Hücre bölünmesinde görevi vardır."
+        },
+        {
+          "header": "Vitamin K;",
+          "content": "Normal kemiklerin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "img": "https://",
+      "table": "",
+      "name": "Vitamin C",
+      "tablet": "30 YUMUŞAK KAPSÜL",
+      "details": [
+        {
+          "content": "Normal kemiklerin korunmasına katkıda bulunur. Kas fonksiyonunun korunmasına katkıda bulunur. Kalsiyumun ve fosforun normal emilimine / kullanımına katkıda bulunur. Dişlerin korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Kan kalsiyum düzeyine katkıda bulunur. Hücre bölünmesinde görevi vardır."
+        },
+        {
+          "header": "Vitamin K;",
+          "content": "Normal kemiklerin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "img": "https://",
+      "table": "",
+      "name": "C Efervesan",
+      "tablet": "20 TABLET",
+      "details": [
+        {
+          "content": "Normal kemiklerin korunmasına katkıda bulunur. Kas fonksiyonunun korunmasına katkıda bulunur. Kalsiyumun ve fosforun normal emilimine / kullanımına katkıda bulunur. Dişlerin korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Kan kalsiyum düzeyine katkıda bulunur. Hücre bölünmesinde görevi vardır."
+        },
+        {
+          "header": "Vitamin K;",
+          "content": "Normal kemiklerin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "img": "https://",
+      "table": "",
+      "name": "Vitamin B Complex",
+      "tablet": "30 TABLET",
+      "details": [
+        {
+          "content": "Normal kemiklerin korunmasına katkıda bulunur. Kas fonksiyonunun korunmasına katkıda bulunur. Kalsiyumun ve fosforun normal emilimine / kullanımına katkıda bulunur. Dişlerin korunmasına katkıda bulunur. Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Kan kalsiyum düzeyine katkıda bulunur. Hücre bölünmesinde görevi vardır."
+        },
+        {
+          "header": "Vitamin K;",
+          "content": "Normal kemiklerin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "img": "https://",
+      "table": "",
+      "name": "Vitamşn D3 K2",
+      "tablet": "DAMLA"
+    },
+    {
+      "id": 13,
+      "img": "https://",
+      "table": "",
+      "name": "Magnezyum Sitrat",
+      "tablet": "Efervesan Tablet",
+      "details": [
+        {
+          "header": "Bağışıklık Magnezyum;",
+          "content": "Yorgunluğun ve bitkinliğin azalmasına katkıda bulunur. Normal enerji oluşum metabolizmasına katkıda bulunur.Kas fonksiyonuna katkıda bulunur. Normal kemiklerin korunmasına katkıda bulunur. "
+        },
+        {
+          "header": "B6 Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Enerji oluşum metabolizmasına katkıda bulunur. Yorgunluk ve bitkinliğin azalmasına katkıda bulunur."
+        },
+        {
+          "header": "D Vitamini;",
+          "content": "Bağışıklık sisteminin normal fonksiyonuna katkıda bulunur. Kan kalsiyum düzeyine katkıda bulunur.Kemiklerin korunmasına katkıda bulunur.Kas fonksiyonunun korunmasına katkıda bulunur."
+        },
+        {
+          "header": "K vitamini;",
+          "content": "Kan pıhtılaşmasına katkıda bulunur.Normal kemiklerin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "img": "https://",
+      "table": "",
+      "name": "Collagen Sun Effervescent",
+      "tablet": "15 EFERVESAN TABLET ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Cildin normal fonksiyonu için gerekli olan kollajen oluşumuna katkıda bulunur. Dişlerin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Diş etlerinin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur.Kıkırdağın  fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kemiklerin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kan damarlarının normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur."
+        },
+        {
+          "header": "Selenyum;",
+          "content": "Normal saçın ve cildin korunmasına katkıda bulunur."
+        },
+        {
+          "header": "Çinko;",
+          "content": "Normal kemiklerin, saçın, tırnakların, cildin, görme yetisinin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "img": "https://",
+      "table": "",
+      "name": "Collagen",
+      "tablet": "15 EFERVESAN TABLET",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Cildin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Dişlerin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur.Diş etlerinin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kıkırdağın fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kemiklerin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kan damarlarının normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Demir emilimini arttırır."
+        },
+        {
+          "header": "Biotin",
+          "content": "Saçın ve cildin korunmasına katkıda bulunur. Normal enerji oluşum metabolizmasına katkıda bulunur."
+        },
+        {
+          "header": "Selenyum;",
+          "content": "Saçın ve cildin korunmasına katkıda bulunur."
+        },
+        {
+          "header": "Çinko;",
+          "content": "Kemiklerin, saçın, tırnakların, cildin, görme yetisinin korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "img": "https://",
+      "table": "",
+      "name": "Hidrolize Collagen",
+      "tablet": "300 GR - 30 DOZ  ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Cildin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Dişlerin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur.Diş etlerinin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kıkırdağın fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kemiklerin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kan damarlarının normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Demir emilimini arttırır."
+        },
+        {
+          "content": "Katı veya sivi gıdalarla birlikte tüketilmesi için aromasız olarak hazırlanmıştır.Arzuya göre «yoğurt, süt, kahve, smoothie, meyve-sebze suları ya da salata vb.» yiyecek ve içeceklere ilave ederek afiyetle tüketilebilir."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "img": "https://",
+      "table": "",
+      "name": "Multi Collagen",
+      "tablet": "TOZ FORMUNDA ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Cildin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Dişlerin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur.Diş etlerinin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kıkırdağın fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kemiklerin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kan damarlarının normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Demir emilimini arttırır."
+        },
+        {
+          "content": "Katı veya sivi gıdalarla birlikte tüketilmesi için aromasız olarak hazırlanmıştır.Arzuya göre «yoğurt, süt, kahve, smoothie, meyve-sebze suları ya da salata vb.» yiyecek ve içeceklere ilave ederek afiyetle tüketilebilir."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "img": "https://",
+      "table": "",
+      "name": "Collagen Beauty",
+      "tablet": "7’Lİ ŞASE ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Cildin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Dişlerin fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur.Diş etlerinin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kıkırdağın fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kemiklerin normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Kan damarlarının normal fonksiyonu için gerekli olan normal kollajen oluşumuna katkıda bulunur. Demir emilimini arttırır."
+        },
+        {
+          "header": "Çinko",
+          "content": "Normal cildin, normal saçın ve normal tırnakların korunmasına katkıda bulunur."
+        },
+        {
+          "header": "Bakır",
+          "content": "Normal saç ve normal cilt pigmentasyonuna katkıda bulunur."
+        },
+        {
+          "header": "Selenyum",
+          "content": "Normal saçın ve normal tırnakların korunmasına katkıda bulunur."
+        },
+        {
+          "header": "Biotin",
+          "content": "Normal cildin, normal saçın, normal bağ dokuların ve normal mukozanın korunmasına katkıda bulunur."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "img": "https://",
+      "table": "",
+      "name": "Whey Protein",
+      "tablet": "7’Lİ ŞASE "
+    },
+    {
+      "id": 20,
+      "img": "https://",
+      "table": "",
+      "name": "Collagen Coffee",
+      "tablet": "30 x 4gr "
+    },
+    {
+      "id": 21,
+      "img": "https://",
+      "table": "",
+      "name": "Collagen Beauty Gummies",
+      "tablet": "30 x 4gr ",
+      "details": [
+        {
+          "header": "C Vitamini;",
+          "content": "Cildin normal fonksiyonu için gerekli olan kollajen oluşumuna katkıda bulunur. Diş etlerinin normal fonksiyonu için gerekli olan kollajen oluşumuna katkıda bulunur. Kıkırdağın normal fonksiyonu için gerekli olan kollajen oluşumuna katkıda bulunur. Kemiklerin normal fonksiyonu için gerekli olan kollajen oluşumuna katkıda bulunur. Kan damarlarının normal fonksiyonu için gerekli olan kollajen oluşumuna katkıda bulunur."
+        }
+      ]
+    }
+  ],
+  "drinks": {},
+  "shampoos": []
+}

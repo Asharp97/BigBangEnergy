@@ -1,15 +1,12 @@
 <template>
   <div>
-    <navbarNoLogo />
-    <slot />
-    <footerbar />
+    product {{ id }}
   </div>
 </template>
 
-<script>
-export default {
+<script setup>
 
-}
+const { id } = useRoute().params
 </script>
 
 <style lang="scss" scoped></style>

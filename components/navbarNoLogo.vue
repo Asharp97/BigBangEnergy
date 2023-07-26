@@ -22,7 +22,6 @@
   </div>
   <div class="bot container">
     <header>
-      <NuxtLink to="/"><img class="logo" src="../assets/logo.png" alt=""></NuxtLink>
       <ul>
         <NuxtLink class="list" to="/commercial">
           <div class="list"> Kurumsal</div>
@@ -82,12 +81,12 @@ export default {
 .bot {
   padding-block: 12px;
   color: $primary;
-  
-  
+
+
   header {
     display: flex;
+    justify-content: flex-end;
     height: 100px;
-    justify-content: space-between;
 
     .logo {
       height: 73px;
@@ -101,7 +100,6 @@ export default {
         text-decoration: none;
         color: inherit;
         padding-inline: 12px;
-        padding-block: 3px;
         display: flex;
         align-items: center;
         font-weight: 500;
