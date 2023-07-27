@@ -1,11 +1,56 @@
 <template>
-  <div>
-    <!-- {{ prods }} -->
-    <div v-for="vitamin in vitamins" :key="id">
-      {{ vitamin.name }}-{{ vitamin.tablet }}
-      <div v-for="detail in vitamin.details">
-        <strong> {{ detail.header }} </strong>
-        {{ detail.content }}
+  <div class="prod container">
+    <div class="section hero">
+      <img src="../../assets/prodfam.png" alt="">
+      <h4>BigBang Energy</h4>
+      <p>BigBang Energy olarak, müşterilerimize en kaliteli vitaminleri sunmayı taahhüt ediyoruz. Ürünlerimiz doğal
+        içeriklerle formüle edilir ve her biri sağlık uzmanları tarafından titizlikle incelenir. Sağlığınızı desteklemek
+        amacıyla geniş bir ürün yelpazemiz bulunmaktadır. Vitamin desteğine ihtiyaç duyduğunuzda, doğru ürünü seçmenize
+        yardımcı olmak için uzman ekibimiz her zaman hizmetinizdedir.
+      </p>
+      <p>
+        Sağlıklı bir gelecek için doğru adım atın ve BigBang Energy ile sağlığınıza değer katın! Unutmayın, sağlıklı bir
+        yaşam için doğru beslenme önemlidir ve doğru vitaminler, enerjinizi artırmanıza ve günlük zorluklarla başa
+        çıkmanıza yardımcı olur.</p>
+    </div>
+    <div class="section">
+
+      <div class="header" @click="vitaminsIsOpen = !vitaminsIsOpen">
+        <h2>Vitaminler & Takviye Edici Gıdalar </h2>
+        <Icon name="ph:caret-down-bold" class="icon" :class="vitaminsIsOpen ? 'up' : ''" />
+      </div>
+      <div class="cards" v-show="vitaminsIsOpen">
+        <div v-for="vitamin in vitamins" :key="id">
+          <NuxtLink :to="`/products/${vitamin.id}`">
+            <div class="card">
+              <div class="imgBg">
+                <img :src="`http://bigbang-energy.com.tr/prodImages/${vitamin.id}.png`" alt="">
+              </div>
+              <h6>{{ vitamin.name }}</h6>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+
+      <div class="header" @click="drinksIsOpen = !drinksIsOpen">
+        <h2>Vitaminli İçecekler</h2>
+        <Icon name="ph:caret-down-bold" class="icon" :class="drinksIsOpen ? 'up' : ''" />
+      </div>
+      <div class="cards" v-show="drinksIsOpen">
+        <div v-for="drink in drinks" :key="id">
+          <NuxtLink :to="`/products/drink/${drink.id}`">
+            <div class="card">
+              <div 
+              class="drinkbg" 
+              :style="`Background: linear-gradient(180deg, ${drink.color} 60%, #fff 100%);`">
+                <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${drink.id}.png`" alt="">
+              </div>
+              <h6>{{ drink.name }}</h6>
+            </div>
+          </NuxtLink>
+        </div>
       </div>
     </div>
 
@@ -18,12 +63,111 @@ export default {
   data() {
     return {
       vitamins: data.vitamins,
-      drinks: data.drink,
-      shampoos: data.shampoo
+      drinks: data.drinks,
+      shampoos: data.shampoos,
+      vitaminsIsOpen: true,
+      drinksIsOpen: false,
+      shampoosIsOpen: false,
     }
   }
 
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  img {
+    width: 100%;
+  }
+
+  h4 {}
+}
+
+.prod {
+  color: #084F9E;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .header {
+    font-size: 15px;
+    font-weight: 600;
+    padding-block: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #084F9E;
+
+    .icon {
+      font-size: 25px;
+      transition: 300ms;
+    }
+
+    .up {
+      transform: rotate(-180deg);
+    }
+
+  }
+
+  .cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 26px;
+    padding-block: 20px;
+    transition: 300ms;
+
+
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+
+
+      .imgBg {
+        background: linear-gradient(180deg, #084F9F 0%, #57C9CB 100%);
+        border-radius: 15px;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          // padding-inline: 30px;
+          // padding-block: 13px;
+          height: 100%;
+
+        }
+
+      }
+      .drinkbg {
+        border-radius: 15px;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          // padding-inline: 30px;
+          // padding-block: 13px;
+          height: 100%;
+
+        }
+
+        h6 {
+          width: 119px;
+
+        }
+      }
+    }
+  }
+}
+</style>

@@ -2,8 +2,6 @@
   "vitamins": [
     {
       "id": 1,
-      "img": "https://",
-      "table": "",
       "name": "Sumbucus Kids",
       "tablet": "30 ÇİĞNEME TABLETİ",
       "details": [
@@ -35,8 +33,6 @@
     },
     {
       "id": 2,
-      "img": "https://",
-      "table": "",
       "name": "Sumbucus Nigra",
       "tablet": "30 ÇİĞNEME TABLETİ",
       "details": [
@@ -68,8 +64,6 @@
     },
     {
       "id": 3,
-      "img": "https://",
-      "table": "",
       "name": "Sumbucus Nigra",
       "tablet": "PROPOLIS COMPLEX E FERVESAN 20        ",
       "details": [
@@ -93,8 +87,6 @@
     },
     {
       "id": 4,
-      "img": "https://",
-      "table": "",
       "name": "Multivitamin",
       "tablet": "30 TABLET",
       "details": [
@@ -118,8 +110,6 @@
     },
     {
       "id": 5,
-      "img": "https://",
-      "table": "",
       "name": "Vitamin D3 K2",
       "tablet": "60 YUMUŞAK KAPSÜL",
       "details": [
@@ -134,8 +124,6 @@
     },
     {
       "id": 6,
-      "img": "https://",
-      "table": "",
       "name": "Selenyum",
       "tablet": "60 TABLET",
       "details": [
@@ -146,8 +134,6 @@
     },
     {
       "id": 7,
-      "img": "https://",
-      "table": "",
       "name": "Biotin",
       "tablet": "30 TABLET",
       "details": [
@@ -162,8 +148,6 @@
     },
     {
       "id": 8,
-      "img": "https://",
-      "table": "",
       "name": "Omega 3",
       "tablet": "30 YUMUŞAK KAPSÜL",
       "details": [
@@ -178,8 +162,6 @@
     },
     {
       "id": 9,
-      "img": "https://",
-      "table": "",
       "name": "Vitamin C",
       "tablet": "30 YUMUŞAK KAPSÜL",
       "details": [
@@ -194,8 +176,6 @@
     },
     {
       "id": 10,
-      "img": "https://",
-      "table": "",
       "name": "C Efervesan",
       "tablet": "20 TABLET",
       "details": [
@@ -210,8 +190,6 @@
     },
     {
       "id": 11,
-      "img": "https://",
-      "table": "",
       "name": "Vitamin B Complex",
       "tablet": "30 TABLET",
       "details": [
@@ -226,15 +204,11 @@
     },
     {
       "id": 12,
-      "img": "https://",
-      "table": "",
       "name": "Vitamşn D3 K2",
       "tablet": "DAMLA"
     },
     {
       "id": 13,
-      "img": "https://",
-      "table": "",
       "name": "Magnezyum Sitrat",
       "tablet": "Efervesan Tablet",
       "details": [
@@ -258,9 +232,7 @@
     },
     {
       "id": 14,
-      "img": "https://",
-      "table": "",
-      "name": "Collagen Sun Effervescent",
+      "name": "Collagen Sun",
       "tablet": "15 EFERVESAN TABLET ",
       "details": [
         {
@@ -279,8 +251,6 @@
     },
     {
       "id": 15,
-      "img": "https://",
-      "table": "",
       "name": "Collagen",
       "tablet": "15 EFERVESAN TABLET",
       "details": [
@@ -304,8 +274,6 @@
     },
     {
       "id": 16,
-      "img": "https://",
-      "table": "",
       "name": "Hidrolize Collagen",
       "tablet": "300 GR - 30 DOZ  ",
       "details": [
@@ -320,8 +288,6 @@
     },
     {
       "id": 17,
-      "img": "https://",
-      "table": "",
       "name": "Multi Collagen",
       "tablet": "TOZ FORMUNDA ",
       "details": [
@@ -336,8 +302,6 @@
     },
     {
       "id": 18,
-      "img": "https://",
-      "table": "",
       "name": "Collagen Beauty",
       "tablet": "7’Lİ ŞASE ",
       "details": [
@@ -365,22 +329,16 @@
     },
     {
       "id": 19,
-      "img": "https://",
-      "table": "",
       "name": "Whey Protein",
       "tablet": "7’Lİ ŞASE "
     },
     {
       "id": 20,
-      "img": "https://",
-      "table": "",
       "name": "Collagen Coffee",
       "tablet": "30 x 4gr "
     },
     {
       "id": 21,
-      "img": "https://",
-      "table": "",
       "name": "Collagen Beauty Gummies",
       "tablet": "30 x 4gr ",
       "details": [
@@ -391,6 +349,43 @@
       ]
     }
   ],
-  "drinks": {},
+  "drinks": [
+    {
+      "name": "Ananaslı Vitaminli İçecek",
+      "id": 1,
+      "notes": "100 ml Multivitamin İçeceği yukarıdaki vitaminler için günlük ihtiyacın %10 beslenme referans Değeri (BRD) ‘ni karşılamaktadır. 100 ml sadece 2 Calori",
+      "color": "#C29D00"
+    },
+    {
+      "name": "Portakallı Vitaminli İçecek",
+      "id": 2,
+      "notes": "100 ml Multivitamin İçeceği yukarıdaki vitaminler için günlük ihtiyacın %10 beslenme referans Değeri (BRD) ‘ni karşılamaktadır. 100 ml sadece 1 Caloridir.",
+      "color": "#C87D12"
+    },
+    {
+      "name": "Karadutlu Vitaminli İçecek",
+      "id": 3,
+      "notes": "100 ml Multivitamin İçeceği yukarıdaki vitaminler için günlük ihtiyacın %20 %10 beslenme referans Değeri (BRD) ‘ni karşılamaktadır. 100 ml sadece 2 Caloridir.",
+      "color": "#262243"
+    },
+    {
+      "name": "Şeftali Vitaminli İçecek",
+      "id": 4,
+      "notes": "100 ml Multivitamin İçeceği yukarıdaki vitaminler için günlük ihtiyacın %10 beslenme referans Değeri (BRD) ‘ni karşılamaktadır. 100 ml sadece 2 Calori",
+      "color": "#FF805A"
+    },
+    {
+      "name": "Karışık Vitaminli İçecek",
+      "id": 5,
+      "notes": "100 ml Multivitamin İçeceği yukarıdaki vitaminler için günlük ihtiyacın %20 / %55 Beslenme referans Değeri (BRD) ‘ni karşılamaktadır.",
+      "color": "#762E5A"
+    },
+    {
+      "name": "Ananaslı Vitaminli İçecek",
+      "id": 6,
+      "notes": "100 ml Multivitamin İçeceği yukarıdaki vitaminler için günlük ihtiyacın %10 beslenme referans Değeri (BRD) ‘ni karşılamaktadır. 100 ml 1 caloridir.",
+      "color": "#D05B6F"
+    }
+  ],
   "shampoos": []
 }

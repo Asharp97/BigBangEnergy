@@ -28,7 +28,7 @@
         </NuxtLink>
         <NuxtLink class="list" to="/products">
           <div class="list"> Ürunlerimiz
-            <Icon name="ci:caret-down-md" />
+
           </div>
         </NuxtLink>
         <NuxtLink class="list" to="/about">

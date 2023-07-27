@@ -53,7 +53,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // gap: 40px;
+    gap: 40px;
 
     h3 {
       font-size: 30px;

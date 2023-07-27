@@ -23,10 +23,11 @@ export default {
   font-family: 'Inter', sans-serif;
 
   body {
-    a{
+    a {
       color: inherit;
       text-decoration: none;
     }
+
     background-color: #fff;
     overflow-x: hidden;
   }
@@ -91,7 +92,7 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 80%;
+  height: 53%;
 }
 
 .input {
@@ -99,9 +100,17 @@ h3 {
   padding: 12px;
   border-radius: 8px;
 }
-.gap{
+
+.gap {
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+
+@media only screen and (max-width : 960px) {
+  .container {
+    width: 100%;
+  }
+
 }
 </style>

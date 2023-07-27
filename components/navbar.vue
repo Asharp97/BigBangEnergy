@@ -29,7 +29,7 @@
         </NuxtLink>
         <NuxtLink class="list" to="/products">
           <div class="list"> Ürunlerimiz
-            <Icon name="ci:caret-down-md" />
+
           </div>
         </NuxtLink>
         <NuxtLink class="list" to="/about">
@@ -82,8 +82,8 @@ export default {
 .bot {
   padding-block: 12px;
   color: $primary;
-  
-  
+
+
   header {
     display: flex;
     height: 100px;
@@ -116,5 +116,16 @@ export default {
       }
     }
   }
+}
+
+@media only screen and (max-width : 960px) {
+  .bot {
+    ul {
+
+      display: none;
+    }
+  }
+
+
 }
 </style>

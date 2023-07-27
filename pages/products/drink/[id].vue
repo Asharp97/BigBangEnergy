@@ -1,57 +1,27 @@
 <template>
   <div class="container">
     <div class="prod section">
-
       <div class="imgDiv">
-        <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="">
+        <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${id}.png`" alt="">
       </div>
       <div class="textDiv">
         <div class="header">
           <h1>
-            {{ vitamins[id].name }}
+            {{ drinks[id].name }}
           </h1>
         </div>
-        <div class="subheader">
-
-          <h2>
-            {{ vitamins[id].tablet }}
-          </h2>
-        </div>
-        <div class="details">
-          <h3>
-            Sağlık Beyanları
-          </h3>
-          <div v-for="detail in vitamins[id].details">
-            <div class="detailHeader">
-              {{ detail.header }}
-            </div>
-            {{ detail.content }}
+        <div class="bottom">
+          <div class="l">
+            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-1.png`" alt="">
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="content section">
-      <div class="header">
-        <h1> İçerikler </h1>
-      </div>
-      <div class="table">
-
-        <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="">
-        <div class="disclaimer">
-          <p>
-            Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği (29960 sayılı mükerrer / 26.01.2017 tarihli Resmi
-            Gazete yayını)
-          </p>
-          <p>
-            **BRD: Beslenme Referans Değeri
-          </p>
-          <p>
-            BIG BANG ENERGY
-          </p>
-
-        </div>
-        <div class="imgDiv">
-          <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="">
+          <div class="r">
+            <div class="rt">
+              <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-2png`" alt="">
+            </div>
+            <div class="rb">
+              <p> {{ drinks[id].notes }} </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -59,7 +29,7 @@
 </template>
 
 <script >
-import data from "../../assets/products.json"
+import data from "../../../assets/products.json"
 // const { id } = useRoute().params
 
 export default {
@@ -67,8 +37,8 @@ export default {
     return {
       id: useRoute().params.id,
       vitamins: data.vitamins,
-      drinks: data.drink,
-      shampoos: data.shampoo
+      drinks: data.drinks,
+      shampoos: data.shampoos
     }
   },
 }
@@ -102,6 +72,16 @@ export default {
         border-bottom: #084F9E 1px solid;
       }
 
+    }
+
+    .bottom {
+      display: flex;
+
+      .r {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
     }
 
 
