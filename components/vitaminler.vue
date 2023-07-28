@@ -12,7 +12,7 @@
         dolor.</p>
       <img src="../assets\plant2.png" class="plant2" alt="">
     </div>
-    <div class="imgDiv">
+    <div class="imgdiv">
       <img src="../assets/vitamins.png" alt="">
     </div>
   </div>
@@ -26,12 +26,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/variabls.scss";
+@import "../assets/scss/media.scss";
 
 .comp {
   display: flex;
   justify-content: space-evenly;
 
-  .imgDiv {
+  .imgdiv {
     width: 50%;
 
     img {
@@ -66,5 +67,22 @@ export default {
       padding-inline: 12px;
     }
   }
+}
+@media only screen and (max-width: 480px) {
+
+.section,
+.comp {
+  flex-direction: column;
+  width: 100%;
+
+  .textdiv {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgdiv {
+    width: 100%;
+  }
+}
 }
 </style>

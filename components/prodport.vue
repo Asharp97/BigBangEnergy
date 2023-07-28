@@ -8,7 +8,7 @@
       </p>
       <div class="stepComp">
 
-        <img src="../assets\before.png" style="width:25px;" alt="">
+        <img src="../assets\before.png" style="width:25px;" alt="" class="before">
         <div class="steps">
           <div class="step">Gıda güvenliği ve lezzeti bir araya getiren ürünlerimizle, damak zevkinizi tatmin etmeyi
             hedefliyoruz.
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="imgDiv">
+    <div class="imgdiv">
       <img src="../assets/prodport.png" alt="">
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
 
   justify-content: space-between;
 
-  .imgDiv {
+  .imgdiv {
     width: 43%;
 
     img {
@@ -63,14 +63,43 @@ export default {
       font-size: 16px;
     }
   }
-  .stepComp{
+
+  .stepComp {
     display: flex;
     gap: 10px;
-    .steps{
+
+    .steps {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .section,
+  .comp {
+    flex-direction: column;
+    width: 100%;
+
+    .textdiv {
+      width: 100%;
+      text-align: center;
+    }
+
+    .imgdiv {
+      width: 80%;
+      margin-inline: auto;
+    }
+  }
+
+  h3 {
+    text-align: center
+  }
+
+  .before {
+    display: none;
   }
 }
 </style>

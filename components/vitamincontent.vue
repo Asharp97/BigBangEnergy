@@ -39,11 +39,12 @@ export default {
 
   position: relative;
 
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
     gap: 32px;
   }
+
   .kid1 {
     position: absolute;
     height: 75%;
@@ -82,6 +83,40 @@ export default {
 
 
 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .section,
+  .comp {
+    flex-direction: column;
+    width: 100%;
+
+    .textdiv {
+      width: 100%;
+      text-align: center;
+
+      .button {
+        margin-inline: auto;
+      }
+
+      display: flex;
+    }
+
+    .imgdiv {
+      width: 80%;
+      margin-inline: auto;
+    }
+  }
+
+  h3 {
+    text-align: center
+  }
+
+  .kid1,
+  .kid2 {
+    display: none;
   }
 }
 </style>

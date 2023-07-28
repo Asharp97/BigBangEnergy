@@ -1,44 +1,62 @@
 <template>
-  <div class="top-bg">
-    <div class="top container">
-      <div class="phones">
+  <div class="navbar">
 
-        <div class="phone">
-          <Icon name="material-symbols:call" />
-          +90 555 555 55 55
-        </div>
-        <Icon name="bi:dash-lg" class="sep" />
-        <div class="phone">
-          <Icon name="material-symbols:call" />
-          +90 555 555 55 55
-        </div>
-      </div>
-      <div>
-        <Icon name="fa6-solid:envelope" />
-        bigbang-energy.com.tr
-      </div>
+    <div class="top-bg">
+      <div class="top container">
+        <div class="phones">
 
+          <div class="phone">
+            <a href="tel:+90 532 225 10 21">
+              <Icon name="material-symbols:call" />
+              +90 532 225 10 21
+            </a>
+          </div>
+          <Icon name="bi:dash-lg" class="sep" />
+          <div class="phone">
+            <a href="tel:+0216 313 67 67">
+              <Icon name="material-symbols:call" />
+              0216 313 67 67
+            </a>
+          </div>
+        </div>
+        <div>
+          <a href="mailto:bigbang-energy.com.tr">
+
+            <Icon name="fa6-solid:envelope" />
+            bigbang-energy.com.tr
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="bot container">
+      <header>
+        <ul>
+          <NuxtLink class="list" to="/commercial">
+            <div class="list"> Kurumsal</div>
+          </NuxtLink>
+          <NuxtLink class="list" to="/products">
+            <div class="list"> Ürunlerimiz
+
+            </div>
+          </NuxtLink>
+          <NuxtLink class="list" to="/about">
+            <div class="list"> Üretim Portöyümüz</div>
+          </NuxtLink>
+          <NuxtLink class="list " to="/contact">
+            <div class="list"> İletişim</div>
+          </NuxtLink>
+        </ul>
+      </header>
     </div>
   </div>
-  <div class="bot container">
-    <header>
-      <ul>
-        <NuxtLink class="list" to="/commercial">
-          <div class="list"> Kurumsal</div>
-        </NuxtLink>
-        <NuxtLink class="list" to="/products">
-          <div class="list"> Ürunlerimiz
 
-          </div>
-        </NuxtLink>
-        <NuxtLink class="list" to="/about">
-          <div class="list"> Üretim Portöyümüz</div>
-        </NuxtLink>
-        <NuxtLink class="list " to="/contact">
-          <div class="list"> İletişim</div>
-        </NuxtLink>
-      </ul>
-    </header>
+  <div class="mobNav">
+    <NuxtLink to="/">
+
+      <img src="../assets/whiteLogo.png" alt="" class="logo">
+    </NuxtLink>
+    <Icon name="solar:hamburger-menu-linear" class="icon" />
   </div>
 </template>
 
@@ -114,5 +132,35 @@ export default {
       }
     }
   }
+}
+
+.mobNav {
+  display: none;
+}
+
+@media only screen and (max-width:480px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .mobNav {
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 64px;
+    align-items: center;
+    padding-inline: 10px;
+
+    .logo {
+      width: 90px;
+    }
+
+    .icon {
+      color: white;
+    }
+  }
+
 }
 </style>

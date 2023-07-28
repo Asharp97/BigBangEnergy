@@ -14,7 +14,7 @@
         yaşam için doğru beslenme önemlidir ve doğru vitaminler, enerjinizi artırmanıza ve günlük zorluklarla başa
         çıkmanıza yardımcı olur.</p>
     </div>
-    <div class="imgDiv">
+    <div class="imgdiv">
       <img src="../assets/shampoo.png" alt="">
     </div>
   </div>
@@ -34,7 +34,7 @@ export default {
 
   justify-content: space-between;
 
-  .imgDiv {
+  .imgdiv {
     width: 55%;
 
     img {
@@ -59,4 +59,36 @@ export default {
       padding-inline: 12px;
     }
   }
-}</style>
+}
+
+@media only screen and (max-width: 480px) {
+
+  .section,
+  .comp {
+    flex-direction: column;
+    width: 100%;
+
+    .textdiv {
+      width: 100%;
+      text-align: center;
+    }
+
+    .imgdiv {
+      width: 80%;
+      margin-inline: auto;
+      position: relative;
+
+      img {
+        position: absolute;
+        right: -200px;
+        top: -500px;
+        z-index: -12;
+      }
+    }
+  }
+
+  h3 {
+    text-align: center
+  }
+}
+</style>

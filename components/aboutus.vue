@@ -1,6 +1,6 @@
 <template>
   <div class="container comp">
-    <div class="imgDiv">
+    <div class="imgdiv">
       <img src="../assets/comp2.png" alt="">
     </div>
     <div class="textdiv">
@@ -26,16 +26,20 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/variabls.scss";
+
 .comp {
   display: flex;
   padding-block: 40px;
   justify-content: space-between;
-  .imgDiv{
+
+  .imgdiv {
     width: 50%;
-    img{
+
+    img {
       width: 100%;
     }
   }
+
   .textdiv {
     color: $primary;
     width: 40%;
@@ -43,15 +47,39 @@ export default {
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 28px;
-    
-    h3{
+
+    h3 {
       font-size: 30px;
       font-weight: 400;
-      
+
     }
-    p{
+
+    p {
       font-size: 16px;
     }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .section,
+  .comp {
+    flex-direction: column;
+    width: 100%;
+
+    .textdiv {
+      width: 100%;
+      text-align: center;
+    }
+
+    .imgdiv {
+      width: 80%;
+      margin-inline: auto;
+    }
+  }
+
+  h3 {
+    text-align: center
   }
 }
 </style>

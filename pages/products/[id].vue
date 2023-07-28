@@ -2,26 +2,27 @@
   <div class="container">
     <div class="prod section">
 
-      <div class="imgDiv">
+      <div class="imgdiv">
         <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="">
+
       </div>
-      <div class="textDiv">
+      <div class="textdiv">
         <div class="header">
           <h1>
-            {{ vitamins[id].name }}
+            {{ vitamins[id - 1].name }}
           </h1>
         </div>
         <div class="subheader">
 
           <h2>
-            {{ vitamins[id].tablet }}
+            {{ vitamins[id - 1].tablet }}
           </h2>
         </div>
         <div class="details">
           <h3>
             Sağlık Beyanları
           </h3>
-          <div v-for="detail in vitamins[id].details">
+          <div v-for="detail in vitamins[id - 1].details">
             <div class="detailHeader">
               {{ detail.header }}
             </div>
@@ -37,6 +38,7 @@
       <div class="table">
 
         <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="">
+
         <div class="disclaimer">
           <p>
             Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği (29960 sayılı mükerrer / 26.01.2017 tarihli Resmi
@@ -50,7 +52,7 @@
           </p>
 
         </div>
-        <div class="imgDiv">
+        <div class="imgdiv">
           <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="">
         </div>
       </div>
@@ -81,7 +83,7 @@ export default {
   justify-content: space-between;
   color: #084F9E;
 
-  .imgDiv {
+  .imgdiv {
     width: 30%;
 
     img {
@@ -89,7 +91,7 @@ export default {
     }
   }
 
-  .textDiv {
+  .textdiv {
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -178,7 +180,7 @@ export default {
 
     }
 
-    .imgDiv {
+    .imgdiv {
       width: 300px;
 
       img {

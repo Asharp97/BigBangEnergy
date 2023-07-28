@@ -17,6 +17,7 @@ export default {
 @import "./assets/scss/variabls.scss";
 
 
+
 * {
   padding: 0;
   margin: 0;
@@ -107,7 +108,7 @@ h3 {
   gap: 80px;
 }
 
-@media only screen and (max-width : 960px) {
+@media only screen and (max-width : 480px) {
   .container {
     width: 100%;
   }

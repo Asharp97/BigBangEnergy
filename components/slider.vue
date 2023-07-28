@@ -2,9 +2,7 @@
   <Carousel :itemsToShow="3.95" :wrapAround="true" :transition="500">
     <Slide v-for="slide in slides" :key="slide">
       <div class="carousel__item">
-        <!-- <img class="image" src="..\assets\slides\S1.png" alt=""> -->
         <img class="image" :src="slide" alt="">
-        <!-- :src="slide"  -->
       </div>
     </Slide>
     <template #addons>
@@ -30,9 +28,16 @@ export default defineComponent({
   data() {
     return {
       slides: [
-        'http://bigbang-energy.com.tr/images/S1.png',
-        'http://bigbang-energy.com.tr/images/S2.png',
-        'http://bigbang-energy.com.tr/images/S3.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S1.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S2.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S3.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S4.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S5.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S6.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S7.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S8.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S9.png',
+        'http://bigbang-energy.com.tr/prodImages/slides/S10.png'
       ],
     }
   },
@@ -40,6 +45,8 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@import "../assets/scss/media.scss";
+
 .carousel__next,
 .carousel__prev {
   :focus {
@@ -67,7 +74,7 @@ export default defineComponent({
 
 
 .image {
-  width: 190%;
+  width: 228%;
   border-radius: 25px;
   margin-block: 12px;
 }
@@ -133,5 +140,14 @@ export default defineComponent({
   opacity: 1;
   width: 280px !important;
   height: 445px;
+}
+
+
+
+@media only screen and (max-width:480px) {
+  .image {
+    transform: translateX(-139px);
+    width: 120%;
+  }
 }
 </style>

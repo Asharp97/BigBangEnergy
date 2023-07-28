@@ -16,4 +16,10 @@ definePageMeta({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media only screen and (max-width:480px) {
+  .gap {
+    width: 100%;
+  }
+}
+</style>

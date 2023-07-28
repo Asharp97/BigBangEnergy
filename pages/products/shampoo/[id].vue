@@ -1,34 +1,30 @@
 <template>
   <div class="container">
-    <div class="prod section" :style="`color:${drinks[id-1].color}`">
+    <div class="prod section" :style="`color:${shampoos[id - 1].color}`">
       <div class="imgdiv">
-        <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${id}.png`" alt="">
+        <img :src="`http://bigbang-energy.com.tr/prodImages/shampoos/${id}.png`" alt="">
       </div>
       <div class="textdiv">
         <div class="header">
-          <h1 :style="`border-bottom: ${drinks[id-1].color} 1px solid;`">
-            {{ drinks[id-1].name }}
+          <h1 :style="`border-bottom: ${shampoos[id - 1].color} 1px solid;`">
+            {{ shampoos[id - 1].name }}
           </h1>
         </div>
         <div class="subheader">
-          <h2 :style="`border-bottom: ${drinks[id-1].color} 1px solid;`">
-            VİTAMİNLİ İÇECEK
+          <h2 :style="`border-bottom: ${shampoos[id - 1].color} 1px solid;`">
+            {{ shampoos[id - 1].flavor }}
           </h2>
         </div>
-        <div class="bottom">
-          <div class="l">
-            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-1.png`" alt="">
-          </div>
-          <div class="r">
-            <div class="rt">
-              <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-2.png`" alt="">
-
-            </div>
-            <div class="rb">
-              <p> {{ drinks[id-1].notes }} </p>
-            </div>
-          </div>
-        </div>
+        <p>
+          Sağlıklı ve güzel saçlar, kendimizi iyi hissetmemizin ve özgüvenimizi artırmanın önemli bir parçasıdır. BigBang
+          Energy olarak, sizlere doğal ve etkili şampuanlar sunarak, saçlarınıza özen göstermenize ve onları en iyi
+          şekilde korumanıza yardımcı oluyoruz.
+        </p>
+        <p>
+          Sizlere sağlıklı ve güzel saçlar için en iyi çözümleri sunmaktan mutluluk duyuyoruz. BigBang Energy ailesine
+          katılarak, saç bakımınızda doğallığı ve etkinliği bir arada yaşayın. Sağlıklı saçlar, daha mutlu günler
+          demektir!
+        </p>
       </div>
     </div>
   </div>
@@ -43,7 +39,7 @@ export default {
     return {
       id: useRoute().params.id,
       vitamins: data.vitamins,
-      drinks: data.drinks,
+      shampoos: data.shampoos,
       shampoos: data.shampoos
     }
   },
@@ -71,6 +67,10 @@ export default {
     width: 65%;
     display: flex;
     flex-direction: column;
+
+    p {
+      margin-top: 30px;
+    }
 
     .header {
       h1 {
@@ -171,5 +171,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>

@@ -33,7 +33,6 @@
       </div>
     </div>
     <div class="section">
-
       <div class="header" @click="drinksIsOpen = !drinksIsOpen">
         <h2>Vitaminli İçecekler</h2>
         <Icon name="ph:caret-down-bold" class="icon" :class="drinksIsOpen ? 'up' : ''" />
@@ -42,12 +41,28 @@
         <div v-for="drink in drinks" :key="id">
           <NuxtLink :to="`/products/drink/${drink.id}`">
             <div class="card">
-              <div 
-              class="drinkbg" 
-              :style="`Background: linear-gradient(180deg, ${drink.color} 60%, #fff 100%);`">
+              <div class="drinkbg" :style="`Background: linear-gradient(180deg, ${drink.color} 60%, #fff 100%);`">
                 <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${drink.id}.png`" alt="">
               </div>
               <h6>{{ drink.name }}</h6>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="header" @click="shampoosIsOpen = !shampoosIsOpen">
+        <h2>Kozmetik Ürünleri & Şampuanlar</h2>
+        <Icon name="ph:caret-down-bold" class="icon" :class="shampoosIsOpen ? 'up' : ''" />
+      </div>
+      <div class="cards" v-show="shampoosIsOpen">
+        <div v-for="shampoo in shampoos" :key="id">
+          <NuxtLink :to="`/products/shampoo/${shampoo.id}`">
+            <div class="card">
+              <div class="shampoobg" :style="`Background: linear-gradient(180deg, ${shampoo.color} 60%, #fff 100%);`">
+                <img :src="`http://bigbang-energy.com.tr/prodImages/shampoos/${shampoo.id}.png`" alt="">
+              </div>
+              <h6>{{ shampoo.name }}</h6>
             </div>
           </NuxtLink>
         </div>
@@ -93,6 +108,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
   .header {
     font-size: 15px;
     font-weight: 600;
@@ -147,7 +163,29 @@ export default {
         }
 
       }
+
       .drinkbg {
+        border-radius: 15px;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          // padding-inline: 30px;
+          // padding-block: 13px;
+          height: 100%;
+
+        }
+
+        h6 {
+          width: 119px;
+
+        }
+      }
+
+      .shampoobg {
         border-radius: 15px;
         width: 120px;
         height: 120px;

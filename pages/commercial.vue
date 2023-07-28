@@ -1,9 +1,8 @@
 <template>
   <div class="comperends gap">
 
-    <div class="h1-bg">
-      <div class="container">
-
+    <div class="h1-bg ">
+      <div class="comp container">
         <div class="h1">
           <h2>Kurumsal</h2>
           <p>Kalite ve süreç odaklı üretim anlayışı ile ürünlerimizin müşteriye aynı standartta ve en güvenli şekilde
@@ -28,23 +27,27 @@
         seviyede tutan
       </div>
       <div class="li">Kalite süreçlerinin periyodik olarak takibini yapan, sonuçları analiz edip, düzeltici ve önleyici
-        faaliyetler ile sürekli iyileştirmeler yapan</div>
+        faaliyetler ile sürekli iyileştirmeler yapan
+      </div>
       <div class="li">Organizasyon içerisinde bulunan her çalışanın katılımını sağlayarak, kalite bilincini yükseltmek
         için gerekli tüm eğitim faaliyetlerini planlayıp gerçekleştirerek aynı misyon, vizyon ve strateji etrafında
         toplanmasını sağlayan ve ortak bir kurumsal kültür oluşturan</div>
       <div class="li rev">Müşteri isteklerinin ve yasal beklentilerin karşılanması için kalite sisteminin etkin
-        çalışmasını sağlayan</div>
+        çalışmasını sağlayan
+      </div>
       <div class="li">Mevcut kalite sisteminin etkinliğini, kalite politikası doğrultusunda oluşturulan, kalite
-        hedeflerini sürekli gözden geçirip iyileştirme faaliyetleri için kaynakları sağlayan</div>
-      <div class="li">Ürünlerini, risklere karşı proaktif bir anlayış içerisinde üreten
+        hedeflerini sürekli gözden geçirip iyileştirme faaliyetleri için kaynakları sağlayan
+      </div>
+      <div class="li">
+        Ürünlerini, risklere karşı proaktif bir anlayış içerisinde üreten
       </div>
       <p>Kalite Kontrol Laboratuvarlarında başlangıç malzemelerinin kullanım öncesi kalite kontrollerinden başlayarak,
         üretimin çeşitli kademelerinde ara ürün, in-proses kontrolleri, bitmiş ürün kalite kontrolleri ile etkin çevre
         kontrolleri yapan, ve bunu gerçekleştirmek için etkin bir Kalite Güvence Sistemi uygulayan kuruluştur.</p>
     </div>
 
-    <div class="h3 container">
-      <div class="textDiv">
+    <div class="h3 comp container">
+      <div class="textdiv">
 
         <h2>Çevre Politikamız</h2>
         <p>Çevre ile ilgili kanun, yönetmelik, tüzük ve diğer yasal gerekliliklere uymak, tüm personelimizde çevre bilinci
@@ -66,15 +69,15 @@
           çalışanlarımızın yanı sıra müşterilerimizi, tedarikçilerimizi ve taşeron firmaları da çevre konusunda
           bilinçlendirmek.</p>
       </div>
-      <div class="imgDiv">
+      <div class="imgdiv">
         <img src="../assets/plant.png" alt="">
       </div>
     </div>
-    <div class="h4 container">
-      <div class="imgDiv">
+    <div class="h4 comp container">
+      <div class="imgdiv">
         <img src="../assets/scientest.png" alt="">
       </div>
-      <div class="textDiv">
+      <div class="textdiv">
 
         <h2>İSG Politikamız</h2>
         <div class="li rev">
@@ -94,7 +97,7 @@
     </div>
     <div class="h5-bg">
       <div class="h5 container">
-        <div class="whitebg textDiv">
+        <div class="whitebg textdiv">
 
           <h2>Tesisimiz</h2>
           <div class="ps">
@@ -149,6 +152,7 @@ export default {
 .h1-bg {
   background-image: url('http://bigbang-energy.com.tr/images/commercialbg.png');
 
+  margin-top: 40px;
   .h1 {
     width: 40%;
     margin-left: auto;
@@ -193,7 +197,7 @@ export default {
   display: flex;
   justify-content: space-between;
 
-  .textDiv {
+  .textdiv {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -215,7 +219,8 @@ export default {
     height: 100%;
     display: flex;
     align-items: center;
-    .textDiv {
+
+    .textdiv {
       padding: 30px;
       display: flex;
       flex-direction: column;
@@ -259,5 +264,22 @@ h2 {
 h2 {
   font-size: 40px;
   font-weight: 400;
+}
+
+@media only screen and (max-width : 480px) {
+  .comperends {
+    text-align: center;
+  }
+
+  .section,
+  .comp {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .textdiv {
+    text-align: center;
+    width: 100%;
+  }
 }
 </style>
