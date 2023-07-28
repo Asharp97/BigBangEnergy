@@ -37,8 +37,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variabls.scss";
-
 .hero {
   display: flex;
   justify-content: space-between;
@@ -51,7 +49,7 @@ export default {
     align-items: flex-start;
     font-size: 16px;
     width: 30%;
-    color: $primary;
+    color: #084f9e;
 
     .logo {
       width: 303px;

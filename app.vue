@@ -14,9 +14,6 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-@import "./assets/scss/variabls.scss";
-
-
 
 * {
   padding: 0;
@@ -53,7 +50,7 @@ export default {
     left: 7px;
     height: 12px;
     width: 12px;
-    background-color: $primary;
+    background-color: #084f9e;
     border-radius: 50%;
   }
 }
@@ -97,7 +94,7 @@ h3 {
 }
 
 .input {
-  border: 1px solid $primary;
+  border: 1px solid #084f9e;
   padding: 12px;
   border-radius: 8px;
 }

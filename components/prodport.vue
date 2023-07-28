@@ -32,8 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variabls.scss";
-
 .comp {
   display: flex;
 
@@ -48,7 +46,7 @@ export default {
   }
 
   .textdiv {
-    color: $primary;
+    color: #084f9e;
     width: 40%;
     display: flex;
     flex-direction: column;

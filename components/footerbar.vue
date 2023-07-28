@@ -14,7 +14,7 @@
         <span>Copyright to Big Bang Energy </span>
       </div>
 
-      <NuxtLink to="commercial">
+      <NuxtLink to="/commercial">
         <div class="section">
           <h2>Kurumsal</h2>
           <h4>Kalite Politikamız</h4>
@@ -87,8 +87,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variabls.scss";
-
 .mobLogo {
   display: none;
 }
@@ -118,7 +116,7 @@ export default {
     margin-block: 40px;
 
     h2 {
-      color: $primary;
+      color: #084f9e;
       font-size: 16px;
       font-weight: 700;
     }
@@ -140,7 +138,7 @@ export default {
 }
 
 .bot-bg {
-  background-color: $primary ;
+  background-color: #084f9e;
   color: white;
   height: 112px;
   align-items: center;

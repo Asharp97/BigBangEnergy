@@ -67,10 +67,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variabls.scss";
-
 .top-bg {
-  background-color: $primary;
+  background-color: #084f9e;
   height: 65px;
   align-items: center;
   display: flex;
@@ -98,7 +96,7 @@ export default {
 
 .bot {
   padding-block: 12px;
-  color: $primary;
+  color: #084f9e;
 
 
   header {
@@ -125,7 +123,7 @@ export default {
 
       .router-link-active {
         div {
-          background-color: $primary;
+          background-color: #084f9e;
           color: white;
           border-radius: 4px;
         }
@@ -145,7 +143,7 @@ export default {
   }
 
   .mobNav {
-    background-color: $primary;
+    background-color: #084f9e;
     display: flex;
     justify-content: space-between;
     width: 95%;

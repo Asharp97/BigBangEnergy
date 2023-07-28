@@ -45,8 +45,6 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import "../assets/scss/media.scss";
-
 .carousel__next,
 .carousel__prev {
   :focus {

@@ -303,7 +303,7 @@
     {
       "id": 18,
       "name": "Collagen Beauty",
-      "tablet": "7’Lİ ŞASE ",
+      "tablet": "7 Lİ ŞASE ",
       "details": [
         {
           "header": "C Vitamini;",
@@ -330,7 +330,7 @@
     {
       "id": 19,
       "name": "Whey Protein",
-      "tablet": "7’Lİ ŞASE "
+      "tablet": "7 Lİ ŞASE "
     },
     {
       "id": 20,
@@ -392,28 +392,24 @@
       "id": 1,
       "flavor": "YASEMİN ÖZLÜ",
       "name": "Hızlı Uzayan Saçlar",
-      "content": "",
       "color": "#C29D00"
     },
     {
       "id": 2,
       "flavor": "ACQUA",
       "name": "Dökülme Karşıtı Onarıcı Şampuan",
-      "content": "",
       "color": "#449BD2"
     },
     {
       "id": 3,
       "flavor": "BİOTİN",
       "name": "Hacimli Dolgun Saçlar",
-      "content": "",
       "color": "#15A208"
     },
     {
       "id": 4,
       "flavor": "SİYAH ORKİDE ÖZLÜ",
       "name": "Düzleştirici Şampuan",
-      "content": "",
       "color": "#D22E35"
     }
   ]

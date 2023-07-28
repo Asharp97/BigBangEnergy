@@ -141,8 +141,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variabls.scss";
-
 .comperends {
   display: flex;
   flex-direction: column;
@@ -153,6 +151,7 @@ export default {
   background-image: url('http://bigbang-energy.com.tr/images/commercialbg.png');
 
   margin-top: 40px;
+
   .h1 {
     width: 40%;
     margin-left: auto;
@@ -184,7 +183,7 @@ export default {
       left: 7px;
       height: 12px;
       width: 12px;
-      background-color: $primary;
+      background-color: #084f9e;
       border-radius: 50%;
     }
   }
@@ -247,7 +246,7 @@ export default {
 
 p,
 h2 {
-  color: $primary;
+  color: #084f9e;
 
 }
 

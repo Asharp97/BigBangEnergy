@@ -114,10 +114,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./assets/scss/variabls.scss";
 
 .section {
-  color: $primary;
+  color: #084f9e;
   height: 100%;
 
   .port {
@@ -175,7 +174,7 @@ export default {
       }
 
       .border {
-        border-bottom: 1px solid $primary;
+        border-bottom: 1px solid #084f9e;
       }
 
     }

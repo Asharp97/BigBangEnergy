@@ -25,9 +25,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variabls.scss";
-@import "../assets/scss/media.scss";
-
 .comp {
   display: flex;
   justify-content: space-evenly;
@@ -68,21 +65,22 @@ export default {
     }
   }
 }
+
 @media only screen and (max-width: 480px) {
 
-.section,
-.comp {
-  flex-direction: column;
-  width: 100%;
-
-  .textdiv {
+  .section,
+  .comp {
+    flex-direction: column;
     width: 100%;
-    text-align: center;
-  }
 
-  .imgdiv {
-    width: 100%;
+    .textdiv {
+      width: 100%;
+      text-align: center;
+    }
+
+    .imgdiv {
+      width: 100%;
+    }
   }
-}
 }
 </style>
