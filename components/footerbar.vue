@@ -11,7 +11,7 @@
 
       <div class="section bet">
         <img src="../assets/logo.png" alt="">
-        <span>Copyright to Big Bang Energy </span>
+        <span>© Big Bang Energy 2023 <br> All rights reserved </span>
       </div>
 
       <NuxtLink to="/commercial">

@@ -5,7 +5,9 @@
       <p>Biz, BigBang Energy, sizlere doğal ve kaliteli vitaminleri ve besin desteklerini sunarak daha sağlıklı bir yaşam
       </p>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur minima ab fugit distinctio possimus </p>
-      <div class="discover button">Ürünleri Keşfet</div>
+      <NuxtLink to="/products">
+        <div class="discover button">Ürünleri Keşfet</div>
+      </NuxtLink>
     </div>
     <div class="slider">
       <slider />

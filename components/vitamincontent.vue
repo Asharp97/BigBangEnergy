@@ -17,7 +17,11 @@
           hızlı temposunda beslenme ihtiyacımızı karşılamak için pratik ve etkili bir çözümdür.
         </p>
       </div>
-      <div class="button">Vitaminli İçecekleri Keşfet</div>
+      <NuxtLink class="button" to="/products">
+      <div >
+          Vitaminli İçecekleri Keşfet
+        </div>
+      </NuxtLink>
     </div>
     <img src="../assets/kid2.png" class="kid2" alt="">
   </div>
@@ -63,6 +67,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap: 50px;
 
 
@@ -97,6 +102,8 @@ export default {
 
       .button {
         margin-inline: auto;
+
+
       }
 
       display: flex;

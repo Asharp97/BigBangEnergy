@@ -23,8 +23,11 @@
         <div v-for="vitamin in vitamins" :key="id">
           <NuxtLink :to="`/products/${vitamin.id}`">
             <div class="card">
-              <div class="imgBg">
+              <div class="imgBg thumb">
                 <img :src="`http://bigbang-energy.com.tr/prodImages/${vitamin.id}.png`" alt="">
+                <div class="icon">
+                  <Icon name="ph:magnifying-glass-light" />
+                </div>
               </div>
               <h6>{{ vitamin.name }}</h6>
             </div>
@@ -41,8 +44,11 @@
         <div v-for="drink in drinks" :key="id">
           <NuxtLink :to="`/products/drink/${drink.id}`">
             <div class="card">
-              <div class="drinkbg" :style="`Background: linear-gradient(180deg, ${drink.color} 60%, #fff 100%);`">
+              <div class="drinkbg thumb" :style="`Background: linear-gradient(180deg, ${drink.color} 60%, #fff 100%);`">
                 <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${drink.id}.png`" alt="">
+                <div class="icon">
+                  <Icon name="ph:magnifying-glass-light" />
+                </div>
               </div>
               <h6>{{ drink.name }}</h6>
             </div>
@@ -59,8 +65,12 @@
         <div v-for="shampoo in shampoos" :key="id">
           <NuxtLink :to="`/products/shampoo/${shampoo.id}`">
             <div class="card">
-              <div class="shampoobg" :style="`Background: linear-gradient(180deg, ${shampoo.color} 60%, #fff 100%);`">
+              <div class="shampoobg thumb"
+                :style="`Background: linear-gradient(180deg, ${shampoo.color} 60%, #fff 100%);`">
                 <img :src="`http://bigbang-energy.com.tr/prodImages/shampoos/${shampoo.id}.png`" alt="">
+                <div class="icon">
+                  <Icon name="ph:magnifying-glass-light" />
+                </div>
               </div>
               <h6>{{ shampoo.name }}</h6>
             </div>
@@ -72,21 +82,18 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import data from "../../assets/products.json"
-export default {
-  data() {
-    return {
-      vitamins: data.vitamins,
-      drinks: data.drinks,
-      shampoos: data.shampoos,
-      vitaminsIsOpen: true,
-      drinksIsOpen: false,
-      shampoosIsOpen: false,
-    }
-  }
 
-}
+const vitamins = ref(data.vitamins)
+const drinks = ref(data.drinks)
+const shampoos = ref(data.shampoos)
+
+const vitaminsIsOpen = ref(true)
+const drinksIsOpen = ref(false)
+const shampoosIsOpen = ref(false)
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -116,6 +123,12 @@ export default {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #084F9E;
+    transition: 300ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(182, 170, 170, 0.126);
+    }
 
     .icon {
       font-size: 25px;
@@ -144,6 +157,35 @@ export default {
       align-items: center;
       gap: 12px;
       text-align: center;
+
+      &:hover {
+        .icon {
+          opacity: 1;
+
+        }
+
+      }
+
+      .thumb {
+        position: relative;
+      }
+
+      .icon {
+        z-index: 10;
+        color: white;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        opacity: 0;
+        transition: 300ms;
+        border-radius: inherit;
+        font-size: 40px;
+        background-color: rgba(0, 0, 0, 0.498);
+      }
+
 
 
       .imgBg {
