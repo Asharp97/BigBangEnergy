@@ -19,7 +19,7 @@
           </h2>
         </div>
         <div class="details">
-          <h3>
+          <h3 v-if="vitamins[id - 1].details">
             Sağlık Beyanları
           </h3>
           <div v-for="detail in vitamins[id - 1].details">
@@ -29,9 +29,30 @@
             {{ detail.content }}
           </div>
         </div>
+        <div class="content section" v-if="!vitamins[id - 1].details">
+          <div class="table">
+
+            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="">
+
+            <div class="disclaimer">
+              <p>
+                Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği (29960 sayılı mükerrer / 26.01.2017 tarihli
+                Resmi
+                Gazete yayını)
+              </p>
+              <p>
+                **BRD: Beslenme Referans Değeri
+              </p>
+              <p>
+                BIG BANG ENERGY
+              </p>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="content section">
+    <div class="content section" v-if="vitamins[id - 1].details">
       <div class="header">
         <h1> İçerikler </h1>
       </div>
@@ -98,9 +119,9 @@ export default {
 
     .header {
       h1 {
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 400;
-        width: 60%;
+        width: fit-content;
         border-bottom: #084F9E 1px solid;
       }
 
@@ -145,9 +166,9 @@ export default {
 .content {
   .header {
     h1 {
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 400;
-      width: 60%;
+      width: fit-content;
       border-bottom: #084F9E 1px solid;
     }
 

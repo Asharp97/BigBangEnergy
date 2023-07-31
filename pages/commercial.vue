@@ -6,10 +6,10 @@
         <div class="h1">
           <h2>Kurumsal</h2>
           <p>Kalite ve süreç odaklı üretim anlayışı ile ürünlerimizin müşteriye aynı standartta ve en güvenli şekilde
-            ulaşmasını sağlamak VEGA İlaç’ın temel amacıdır.
+            ulaşmasını sağlamak BBE İlaç’ın temel amacıdır.
           </p>
           <p>
-            Vega İlaç olarak Dünyada ve Türkiye’de ki örnek uygulamaları,yeni tedarikçileri ve en yeni teknolojik ürünler
+            BBE İlaç olarak Dünyada ve Türkiye’de ki örnek uygulamaları,yeni tedarikçileri ve en yeni teknolojik ürünler
             ile
             kullanım alanlarını takip ederek müşterilerimizin hizmetine sunuyoruz.</p>
         </div>
@@ -86,7 +86,7 @@
         </div>
         <div class="li">
           İSG yönetiminin ve İSG performansının sürekli iyileştirilmesini sağlamak, yürürlükteki İSG mevzuatına ve üyesi
-          olunan kuruluşların uygun şartlarına uymak, tedarikçilerin fabrika ortamında yürürlükteki İSG Mevzuatına ve VEGA
+          olunan kuruluşların uygun şartlarına uymak, tedarikçilerin fabrika ortamında yürürlükteki İSG Mevzuatına ve BBE
           İlaç’ın özel şartlarına uymasını sağlamak, her seviyedeki çalışanların İSG bilinci ve gerekliliklerinin farkında
           olmasını sağlamak amacı ile eğitimler düzenlemek, İSG Yönetim Sisteminin etkin ve verimli uygulaması ile çalışma
           alanları içerisinde “Sıfır İş Kazası” hedefine ulaşmak, risk değerlendirme çalışmalarına bağlı olarak alınan

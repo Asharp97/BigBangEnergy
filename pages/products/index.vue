@@ -106,7 +106,9 @@ const shampoosIsOpen = ref(false)
     width: 100%;
   }
 
-  h4 {}
+  h4 {
+    font-size: 25px;
+  }
 }
 
 .prod {

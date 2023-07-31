@@ -1,8 +1,9 @@
 <template>
   <Carousel :itemsToShow="3.95" :wrapAround="true" :transition="500">
-    <Slide v-for="slide in slides" :key="slide">
+    <Slide v-for="slide in 10" :key="slide">
       <div class="carousel__item">
-        <img class="image" :src="slide" alt="">
+        <!-- <img class="image" :src="`../../assets/slides/s${slide}.png`" alt=""> -->
+        <img class="image" :src="`http://bigbang-energy.com.tr/assets/slides/S${slide}.png`" alt="">
       </div>
     </Slide>
     <template #addons>
@@ -23,24 +24,7 @@ export default defineComponent({
     Carousel,
     Slide,
     Navigation,
-
-  },
-  data() {
-    return {
-      slides: [
-        'http://bigbang-energy.com.tr/prodImages/slides/S1.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S2.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S3.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S4.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S5.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S6.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S7.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S8.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S9.png',
-        'http://bigbang-energy.com.tr/prodImages/slides/S10.png'
-      ],
-    }
-  },
+  }
 })
 </script>
 

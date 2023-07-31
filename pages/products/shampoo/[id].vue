@@ -60,6 +60,7 @@ export default {
 
     img {
       width: 100%;
+      transform: scale(1.5);
     }
   }
 
@@ -74,9 +75,9 @@ export default {
 
     .header {
       h1 {
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 400;
-        width: 60%;
+        width: fit-content;
       }
 
     }

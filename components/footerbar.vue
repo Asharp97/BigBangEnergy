@@ -24,7 +24,8 @@
           <h4>Sertifikalarımız</h4>
         </div>
       </NuxtLink>
-      <NuxtLink to="/products">
+
+      <!-- <NuxtLink to="/products">
         <div class="section">
           <h2>Ürünlerimiz</h2>
           <h4>Vitaminler</h4>
@@ -34,7 +35,8 @@
           <h4>Yeni ürünlerimiz</h4>
           <h4>Contact Us</h4>
         </div>
-      </NuxtLink>
+      </NuxtLink> -->
+      <!-- Products Deleted -->
       <NuxtLink to="/about">
         <div class="section">
           <h2>Üretim Portföyümüz</h2>

@@ -4,7 +4,7 @@
       <img class="logo" src="../assets/logo.png" alt="">
       <p>Biz, BigBang Energy, sizlere doğal ve kaliteli vitaminleri ve besin desteklerini sunarak daha sağlıklı bir yaşam
       </p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur minima ab fugit distinctio possimus </p>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur minima ab fugit distinctio possimus </p> -->
       <NuxtLink to="/products">
         <div class="discover button">Ürünleri Keşfet</div>
       </NuxtLink>

@@ -74,9 +74,9 @@ export default {
 
     .header {
       h1 {
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 400;
-        width: 60%;
+        width: fit-content;
       }
 
     }

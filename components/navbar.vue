@@ -35,11 +35,13 @@
           <NuxtLink class="list" to="/commercial">
             <div class="list"> Kurumsal</div>
           </NuxtLink>
-          <NuxtLink class="list" to="/products">
-            <div class="list"> Ürunlerimiz
 
+          <!-- <NuxtLink class="list" to="/products">
+            <div class="list"> Ürünlerimiz
             </div>
-          </NuxtLink>
+          </NuxtLink> -->
+          <!-- Products Deleted -->
+          
           <NuxtLink class="list" to="/about">
             <div class="list"> Üretim Portöyümüz</div>
           </NuxtLink>

@@ -6,10 +6,9 @@
         vitamin üretemez, bu nedenle dengeli bir diyetle vitamin alımını sağlamak hayati öneme sahiptir. Her bir vitaminin
         farklı fonksiyonları ve sağlık yararları vardır.
       </p>
-      <p class=" rev">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur sint natus doloremque
-        hic quidem
-        praesentium totam debitis, aperiam ad perspiciatis dicta mollitia unde provident quibusdam sed excepturi quasi
-        dolor.</p>
+      <p class=" rev">Biz, sağlığınıza değer katmak için en iyisini sunmaya kararlıyız. Tüm vitaminlerimiz, doğal
+        kaynaklardan elde edilerek üretilir ve en yüksek kalite standartlarına uygun bir şekilde formüle edilir. Sizin
+        için en iyisini sunabilmek adına, vitaminlerimiz uzman ekibimiz tarafından titizlikle incelenir ve onaylanır.</p>
       <img src="../assets\plant2.png" class="plant2" alt="">
     </div>
     <div class="imgdiv">
