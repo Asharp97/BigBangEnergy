@@ -41,7 +41,7 @@
             </div>
           </NuxtLink> -->
           <!-- Products Deleted -->
-          
+
           <NuxtLink class="list" to="/about">
             <div class="list"> Üretim Portöyümüz</div>
           </NuxtLink>
@@ -58,12 +58,38 @@
 
       <img src="../assets/whiteLogo.png" alt="" class="logo">
     </NuxtLink>
-    <Icon name="solar:hamburger-menu-linear" class="icon" />
+    <Icon name="solar:hamburger-menu-linear" class="icon" @click="sideMenu = true" v-if="!sideMenu" />
+    <Icon name="solar:close-circle-outline" class="icon black" @click="sideMenu = false" v-else />
+  </div>
+  <div class="sideMenu" @click.self="sideMenu = false" :class="sideMenu ? 'open' : ''">
+    <ul>
+      <NuxtLink class="list" to="/commercial">
+        <div class="list"> Kurumsal</div>
+      </NuxtLink>
+
+      <!-- <NuxtLink class="list" to="/products">
+            <div class="list"> Ürünlerimiz
+            </div>
+          </NuxtLink> -->
+      <!-- Products Deleted -->
+
+      <NuxtLink class="list" to="/about">
+        <div class="list"> Üretim Portöyümüz</div>
+      </NuxtLink>
+      <NuxtLink class="list " to="/contact">
+        <div class="list"> İletişim</div>
+      </NuxtLink>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      sideMenu: true,
+    }
+  }
 
 }
 </script>
@@ -152,6 +178,7 @@ export default {
     height: 64px;
     align-items: center;
     padding-inline: 10px;
+    position: relative;
 
     .logo {
       width: 90px;
@@ -159,6 +186,51 @@ export default {
 
     .icon {
       color: white;
+      position: absolute;
+      right: 10px;
+      font-size: 25px;
+      z-index: 200;
+    }
+
+    .black {
+      color: black !important;
+    }
+  }
+
+  .sideMenu {
+    background-color: rgba(0, 0, 0, 0.348);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+
+    ul {
+      width: 0;
+      background-color: white;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding-top: 70px;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+      transition: 300ms;
+    }
+  }
+
+  .open {
+    opacity: 1;
+    visibility: visible;
+
+    ul {
+      width: 50%;
     }
   }
 

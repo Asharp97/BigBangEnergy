@@ -1,11 +1,11 @@
 <template>
   <div class="gap">
-    <hero />
+    <!-- <hero />
     <aboutus />
     <vitaminler />
     <vitamincontent />
     <prodport />
-    <shampoo />
+    <shampoo /> -->
 
   </div>
 </template>
