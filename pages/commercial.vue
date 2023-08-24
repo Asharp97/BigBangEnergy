@@ -98,7 +98,6 @@
     <div class="h5-bg">
       <div class="h5 container">
         <div class="whitebg textdiv">
-
           <h2>Tesisimiz</h2>
           <div class="ps">
 
@@ -149,6 +148,7 @@ export default {
 
 .h1-bg {
   background-image: url('http://bigbang-energy.com.tr/images/commercialbg.png');
+  background-size: cover;
 
   margin-top: 40px;
 
@@ -266,8 +266,60 @@ h2 {
 }
 
 @media only screen and (max-width : 480px) {
+  .h2 .li{
+    margin-inline: 2px;
+    text-align: start;
+  }
+  .ps p{
+    padding-inline: 0px !important;
+  }
+  .h1-bg {
+    background-position: -29rem;
+  }
+  .h5-bg{
+    height: 500px;
+
+  }
+  .whitebg{
+    height: 69%;
+    
+  }
+
+  .h1 {
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-inline: auto;
+
+  }
+
+  p,
+  .li {
+    font-size: 10px;
+
+  }
+
+  .imgdiv {
+    order: 2;
+    width: 80%;
+    margin-inline: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .textdiv{
+    margin-inline: auto;
+    width: 96% !important;
+    margin-block: 12px;
+
+  }
+
   .comperends {
-    text-align: center;
+    // text-align: center;
   }
 
   .section,
@@ -277,7 +329,7 @@ h2 {
   }
 
   .textdiv {
-    text-align: center;
+    // text-align: center;
     width: 100%;
   }
 }

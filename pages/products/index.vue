@@ -1,5 +1,5 @@
 <template>
-  <div class="prod container">
+  <!-- <div class="prod container">
     <div class="section hero">
       <img src="../../assets/prodfam.png" alt="">
       <h4>BigBang Energy</h4>
@@ -14,7 +14,6 @@
         çıkmanıza yardımcı olur.</p>
     </div>
     <div class="section">
-
       <div class="header" @click="vitaminsIsOpen = !vitaminsIsOpen">
         <h2>Vitaminler & Takviye Edici Gıdalar </h2>
         <Icon name="ph:caret-down-bold" class="icon" :class="vitaminsIsOpen ? 'up' : ''" />
@@ -79,7 +78,7 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 </template>
 
 <script setup>
@@ -249,6 +248,21 @@ const shampoosIsOpen = ref(false)
 
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+
+  h2,
+  h4,
+  p {
+    padding-inline: 12px;
+  }
+
+  .prod {
+    .cards {
+      justify-content: center;
     }
   }
 }

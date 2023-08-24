@@ -1,7 +1,7 @@
 <template>
   <div class="container comp">
     <div class="imgdiv">
-      <img src="../assets/comp2.png" alt="">
+      <img src="../assets/comp2.png">
     </div>
     <div class="textdiv">
       <h3>Hakkımızda</h3>

@@ -9,16 +9,14 @@
           <a target=”_blank” href="https://maps.app.goo.gl/gDT2JAumz1a6brRE8?g_st=com.tinyspeck.chatlyio.share">
             <div class="cont">
               <h4>Adres</h4>
-              <p>Emek, Şems Cd. No:7, 34785 Sancaktepe/İstanbul</p>
+              <!-- <p>Emek, Şems Cd. No:7, 34785 Sancaktepe/İstanbul</p> -->
             </div>
           </a>
           <div class="cont">
-
-
             <h4>Phone</h4>
             <div class="phone">
               <a href="tel:+90 532 225 10 21">+90 532 225 10 21</a>
-              <a href="tel:0216 313 67 67">0216 313 67 67</a>
+              <!-- <a href="tel:0216 313 67 67">0216 313 67 67</a> -->
             </div>
           </div>
         </div>
@@ -30,7 +28,6 @@
               <Icon class="icon" name="skill-icons:instagram" />
               <Icon class="icon" name="skill-icons:twitter" />
               <Icon class="icon" name="devicon:facebook" />
-
             </div>
           </div>
           <a href="mailto:bigbang-energy.com.tr">
@@ -40,7 +37,6 @@
             </div>
           </a>
         </div>
-
       </div>
     </div>
   </div>
@@ -120,6 +116,32 @@ export default {
         font-size: 15px;
         font-weight: 300;
 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .contact {
+    border-radius: 0;
+    height: fit-content !important;
+
+    .content {
+      flex-direction: column;
+      gap: 42px;
+      margin-block: 19px;
+
+      .col {
+        height: fit-content;
+        width: fit-content !important;
+
+        .phone {
+          flex-direction: row !important;
+
+          a {
+            width: fit-content;
+          }
+        }
       }
     }
   }

@@ -57,9 +57,7 @@
         <h1> İçerikler </h1>
       </div>
       <div class="table">
-
         <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="">
-
         <div class="disclaimer">
           <p>
             Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği (29960 sayılı mükerrer / 26.01.2017 tarihli Resmi
@@ -71,10 +69,9 @@
           <p>
             BIG BANG ENERGY
           </p>
-
         </div>
         <div class="imgdiv">
-          <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="">
+          <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="" class="secondImg">
         </div>
       </div>
     </div>
@@ -208,6 +205,38 @@ export default {
         width: 100%;
       }
     }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .prod{
+    flex-direction: row-reverse;
+    margin-block: 30px;
+    .content{
+    }
+    .imgdiv{
+      height: fit-content;
+      float: left;
+    }
+    
+  }
+  h1{
+    font-size: 20px !important;
+    margin-block: 12px;
+  }
+  .container{
+    width: 96%;
+  }
+  .table{
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 12px
+    ;
+    .tableContent{
+      width: 80%;
+    }
+  }
+  .secondImg{
+    display: none;
   }
 }
 </style>

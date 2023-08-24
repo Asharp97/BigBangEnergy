@@ -65,6 +65,7 @@ export default {
   .comp {
     flex-direction: column;
     width: 100%;
+    overflow: hidden;
 
     .textdiv {
       width: 100%;
@@ -75,11 +76,13 @@ export default {
       width: 80%;
       margin-inline: auto;
       position: relative;
+      // overflow: hidden;
 
       img {
         position: absolute;
         right: -200px;
-        top: -500px;
+        top: -380px;
+        opacity: .5;
         z-index: -12;
       }
     }

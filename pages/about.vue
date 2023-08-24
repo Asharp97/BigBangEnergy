@@ -1,7 +1,7 @@
 <template>
   <div class="sections gap">
     <div class="sci section">
-      <div style="height: 100%;" class="container">
+      <div class="container">
         <div class="port">
 
           <h1>Üretim Portföyümüz</h1>
@@ -19,13 +19,16 @@
         </div>
       </div>
     </div>
+    <img class="onlyMob"
+      src="https://drscdn.500px.org/photo/1074447313/m%3D900/v2?sig=c46655947cfb62114ebab57bfa6f6438bc98ac4d0e9dd907505f03e0eee490a3"
+      alt="">
     <div class="section">
       <div class="lists ">
         <div class="container lists">
           <div class="list">
             <div class="content">
               <h2>Katı Üretim</h2>
-              <div>
+              <div class="uretims">
                 <div class="border">
                   <div class="li">
                     Tablet
@@ -58,7 +61,7 @@
           <div class="list">
             <div class="content">
               <h2>Likit Üretim</h2>
-              <div>
+              <div class="uretims">
                 <div class="border">
                   <div class="li">
                     Şurup
@@ -114,7 +117,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .section {
   color: #084f9e;
   height: 100%;
@@ -176,18 +178,16 @@ export default {
       .border {
         border-bottom: 1px solid #084f9e;
       }
-
     }
-
-
   }
-
 }
 
 .sci {
   background-image: url('https://drscdn.500px.org/photo/1074447313/m%3D900/v2?sig=c46655947cfb62114ebab57bfa6f6438bc98ac4d0e9dd907505f03e0eee490a3');
   background-size: cover;
   height: 702px;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -209,6 +209,82 @@ export default {
     }
 
 
+  }
+}
+
+.onlyMob {
+  display: none;
+}
+
+@media only screen and (max-width : 480px) {
+  .onlyMob {
+    display: block;
+  }
+
+  .port {
+    text-align: center;
+    height: fit-content !important;
+    margin-block: 20px;
+    margin-inline: auto;
+    width: 96% !important;
+    gap: 12px !important;
+
+    .ps {
+      gap: 2px !important;
+    }
+
+  }
+
+  h1 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 10px !important;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .sci {
+    background-image: none;
+    height: fit-content;
+  }
+
+  .gap {
+    gap: 0;
+  }
+
+  .lists {
+    display: flex;
+    flex-direction: column;
+    background: none !important;
+
+    .list {
+      width: 100% !important;
+      margin-block: 12px;
+
+      .content {
+        width: 100% !important;
+
+        h2,
+        .uretims,
+        p {
+          padding-inline: 12px;
+        }
+
+        .sci {
+          background-image: none;
+        }
+      }
+    }
+  }
+
+  .whitebg {
+    p {
+      padding: 12px;
+    }
   }
 }
 </style>

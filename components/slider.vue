@@ -1,135 +1,42 @@
 <template>
-  <Carousel :itemsToShow="3.95" :wrapAround="true" :transition="500">
-    <Slide v-for="slide in 10" :key="slide">
-      <div class="carousel__item">
-        <!-- <img class="image" :src="`../../assets/slides/s${slide}.png`" alt=""> -->
-        <img class="image" :src="`http://bigbang-energy.com.tr/assets/slides/S${slide}.png`" alt="">
-      </div>
-    </Slide>
-    <template #addons>
-      <navigation />
-    </template>
-  </Carousel>
+  <swiper :modules="modules" :slides-per-view="3" :space-between="50" navigation :pagination="{ clickable: true }"
+    :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+  </swiper>
 </template>
-
 <script>
-import { defineComponent } from 'vue'
-import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-import 'vue3-carousel/dist/carousel.css'
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
 
-export default defineComponent({
-  name: 'Autoplay',
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+// Import Swiper styles
+export default {
   components: {
-    Carousel,
-    Slide,
-    Navigation,
-  }
-})
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log('slide change');
+    };
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y],
+    };
+  },
+};
 </script>
-
-<style scoped lang="scss">
-.carousel__next,
-.carousel__prev {
-  :focus {
-    outline: none;
-  }
-
-  position: absolute;
-
-  .carousel__item {
-    .image {
-      width: 100% !important;
-    }
-  }
-}
-
-
-.carousel__item {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-
-
-
-
-.image {
-  width: 228%;
-  border-radius: 25px;
-  margin-block: 12px;
-}
-
-.carousel__slide {
-  padding: 5px;
-
-}
-
-.carousel__viewport {
-  perspective: 200px;
-  height: 700px;
-}
-
-.carousel__track {
-  transform-style: preserve-3d;
-}
-
-.carousel__slide--sliding {
-  transition: 0.5s;
-}
-
-.carousel__slide {
-  opacity: 0.9;
-  transform: rotateY(-20deg) scale(0.9);
-  opacity: 0;
-  width: 0px;
-}
-
-
-
-.carousel__slide--active~.carousel__slide {
-  transform: rotateY(20deg) scale(0.9);
-}
-
-.carousel__slide--prev {
-
-  opacity: 1;
-  transform: rotateY(-10deg) scale(0.95);
-  z-index: 5;
-  opacity: 1;
-}
-
-.carousel__slide--next {
-  opacity: 1;
-  transform: rotateY(10deg) scale(0.95);
-  z-index: 5;
-  opacity: 1;
-
-}
-
-.carousel__slide--next,
-.carousel__slide--prev {
-
-  width: 160px !important;
-
-}
-
-.carousel__slide--active {
-  opacity: 1;
-  transform: rotateY(0) scale(1.1);
-  z-index: 10;
-  opacity: 1;
-  width: 280px !important;
-  height: 445px;
-}
-
-
-
-@media only screen and (max-width:480px) {
-  .image {
-    transform: translateX(-139px);
-    width: 120%;
-  }
-}
-</style>
