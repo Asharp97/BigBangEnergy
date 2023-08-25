@@ -42,6 +42,7 @@
           </NuxtLink> -->
           <!-- Products Deleted -->
 
+
           <NuxtLink class="list" to="/about">
             <div class="list"> Üretim Portöyümüz</div>
           </NuxtLink>
@@ -67,6 +68,28 @@
         <div class="list"> Ana Sayfa</div>
       </NuxtLink>
 
+      <NuxtLink class="list" to="/commercial">
+        <div class="list"> Kurumsal</div>
+      </NuxtLink>
+
+      <!-- <NuxtLink class="list" to="/products">
+            <div class="list"> Ürünlerimiz
+            </div>
+          </NuxtLink> -->
+      <!-- Products Deleted -->
+
+      <NuxtLink class="list" to="/about">
+        <div class="list"> Üretim Portöyümüz</div>
+      </NuxtLink>
+      <NuxtLink class="list " to="/contact">
+        <div class="list"> İletişim</div>
+      </NuxtLink>
+    </ul>
+    <Icon name="solar:hamburger-menu-linear" class="icon" @click="sideMenu = true" v-if="!sideMenu" />
+    <Icon name="solar:close-circle-outline" class="icon black" @click="sideMenu = false" v-else />
+  </div>
+  <div class="sideMenu" @click.self="sideMenu = false" :class="sideMenu ? 'open' : ''">
+    <ul>
       <NuxtLink class="list" to="/commercial">
         <div class="list"> Kurumsal</div>
       </NuxtLink>

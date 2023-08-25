@@ -42,6 +42,7 @@
           </NuxtLink> -->
           <!-- Products Deleted -->
 
+
           <NuxtLink class="list" to="/about">
             <div class="list"> Üretim Portöyümüz</div>
           </NuxtLink>
