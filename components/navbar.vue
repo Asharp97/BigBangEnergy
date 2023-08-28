@@ -25,7 +25,6 @@
             bigbang-energy.com.tr
           </a>
         </div>
-
       </div>
     </div>
     <div class="bot container">
@@ -33,21 +32,21 @@
         <NuxtLink to="/"><img class="logo" src="../assets/logo.png" alt=""></NuxtLink>
         <ul>
           <NuxtLink class="list" to="/commercial">
-            <div class="list"> Kurumsal</div>
+            <div class="list" @click="sideMenu = false"> Kurumsal</div>
           </NuxtLink>
 
           <!-- <NuxtLink class="list" to="/products">
-            <div class="list"> Ürünlerimiz
+            <div class="list" @click="sideMenu=false"> Ürünlerimiz
             </div>
           </NuxtLink> -->
           <!-- Products Deleted -->
 
 
           <NuxtLink class="list" to="/about">
-            <div class="list"> Üretim Portöyümüz</div>
+            <div class="list" @click="sideMenu = false"> Üretim Portöyümüz</div>
           </NuxtLink>
           <NuxtLink class="list " to="/contact">
-            <div class="list"> İletişim</div>
+            <div class="list" @click="sideMenu = false"> İletişim</div>
           </NuxtLink>
         </ul>
       </header>
@@ -64,24 +63,24 @@
   <div class="sideMenu" @click.self="sideMenu = false" :class="sideMenu ? 'open' : ''">
     <ul>
       <NuxtLink class="list" to="/">
-        <div class="list"> Ana Sayfa</div>
+        <div class="list" @click="sideMenu = false"> Ana Sayfa</div>
       </NuxtLink>
 
       <NuxtLink class="list" to="/commercial">
-        <div class="list"> Kurumsal</div>
+        <div class="list" @click="sideMenu = false"> Kurumsal</div>
       </NuxtLink>
 
       <!-- <NuxtLink class="list" to="/products">
-            <div class="list"> Ürünlerimiz
+            <div class="list" @click="sideMenu=false"> Ürünlerimiz
             </div>
           </NuxtLink> -->
       <!-- Products Deleted -->
 
       <NuxtLink class="list" to="/about">
-        <div class="list"> Üretim Portöyümüz</div>
+        <div class="list" @click="sideMenu = false"> Üretim Portöyümüz</div>
       </NuxtLink>
       <NuxtLink class="list " to="/contact">
-        <div class="list"> İletişim</div>
+        <div class="list" @click="sideMenu = false"> İletişim</div>
       </NuxtLink>
     </ul>
   </div>

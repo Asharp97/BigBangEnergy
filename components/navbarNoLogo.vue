@@ -33,21 +33,21 @@
       <header>
         <ul>
           <NuxtLink class="list" to="/commercial">
-            <div class="list"> Kurumsal</div>
+            <div class="list" @click="sideMenu = false"> Kurumsal</div>
           </NuxtLink>
 
           <!-- <NuxtLink class="list" to="/products">
-            <div class="list"> Ürünlerimiz
+            <div class="list" @click="sideMenu=false"> Ürünlerimiz
             </div>
           </NuxtLink> -->
           <!-- Products Deleted -->
 
 
           <NuxtLink class="list" to="/about">
-            <div class="list"> Üretim Portöyümüz</div>
+            <div class="list" @click="sideMenu = false"> Üretim Portöyümüz</div>
           </NuxtLink>
           <NuxtLink class="list " to="/contact">
-            <div class="list"> İletişim</div>
+            <div class="list" @click="sideMenu = false"> İletişim</div>
           </NuxtLink>
         </ul>
       </header>
@@ -62,49 +62,28 @@
     <Icon name="solar:hamburger-menu-linear" class="icon" @click="sideMenu = true" v-if="!sideMenu" />
     <Icon name="solar:close-circle-outline" class="icon black" @click="sideMenu = false" v-else />
   </div>
+
   <div class="sideMenu" @click.self="sideMenu = false" :class="sideMenu ? 'open' : ''">
     <ul>
       <NuxtLink class="list" to="/">
-        <div class="list"> Ana Sayfa</div>
+        <div class="list" @click="sideMenu = false"> Anasayfa</div>
       </NuxtLink>
 
       <NuxtLink class="list" to="/commercial">
-        <div class="list"> Kurumsal</div>
+        <div class="list" @click="sideMenu = false"> Kurumsal</div>
       </NuxtLink>
 
       <!-- <NuxtLink class="list" to="/products">
-            <div class="list"> Ürünlerimiz
+            <div class="list" @click="sideMenu=false"> Ürünlerimiz
             </div>
           </NuxtLink> -->
       <!-- Products Deleted -->
 
       <NuxtLink class="list" to="/about">
-        <div class="list"> Üretim Portöyümüz</div>
+        <div class="list" @click="sideMenu = false"> Üretim Portöyümüz</div>
       </NuxtLink>
       <NuxtLink class="list " to="/contact">
-        <div class="list"> İletişim</div>
-      </NuxtLink>
-    </ul>
-    <Icon name="solar:hamburger-menu-linear" class="icon" @click="sideMenu = true" v-if="!sideMenu" />
-    <Icon name="solar:close-circle-outline" class="icon black" @click="sideMenu = false" v-else />
-  </div>
-  <div class="sideMenu" @click.self="sideMenu = false" :class="sideMenu ? 'open' : ''">
-    <ul>
-      <NuxtLink class="list" to="/commercial">
-        <div class="list"> Kurumsal</div>
-      </NuxtLink>
-
-      <!-- <NuxtLink class="list" to="/products">
-            <div class="list"> Ürünlerimiz
-            </div>
-          </NuxtLink> -->
-      <!-- Products Deleted -->
-
-      <NuxtLink class="list" to="/about">
-        <div class="list"> Üretim Portöyümüz</div>
-      </NuxtLink>
-      <NuxtLink class="list " to="/contact">
-        <div class="list"> İletişim</div>
+        <div class="list" @click="sideMenu = false"> İletişim</div>
       </NuxtLink>
     </ul>
   </div>
