@@ -29,20 +29,25 @@
 
       </div>
     </div>
-    <div class="bot container">
+    <div class="bot">
       <header>
         <ul>
+
           <NuxtLink class="list" to="/commercial">
             <div class="list" @click="sideMenu = false"> Kurumsal</div>
           </NuxtLink>
 
-          <!-- <NuxtLink class="list" to="/products">
-            <div class="list" @click="sideMenu=false"> Ürünlerimiz
+          <NuxtLink class="list" to="/products">
+            <div class="list" @click="sideMenu = false"> Ürünlerimiz
             </div>
-          </NuxtLink> -->
+          </NuxtLink>
           <!-- Products Deleted -->
 
+        </ul>
 
+        <NuxtLink class="list" to="/"><img class="logo" src="../assets/whitelogo.png" alt=""></NuxtLink>
+
+        <ul>
           <NuxtLink class="list" to="/about">
             <div class="list" @click="sideMenu = false"> Üretim Portöyümüz</div>
           </NuxtLink>
@@ -101,7 +106,7 @@ export default {
 
 <style lang="scss" scoped>
 .top-bg {
-  background-color: #084f9e;
+  background-color: #2E2E2E;
   height: 65px;
   align-items: center;
   display: flex;
@@ -128,13 +133,17 @@ export default {
 }
 
 .bot {
-  padding-block: 12px;
-  color: #084f9e;
+  color: white;
+  position: absolute;
+  z-index: 500;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
 
 
   header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     height: 100px;
 
     .logo {
@@ -144,6 +153,8 @@ export default {
 
     ul {
       display: flex;
+      justify-content: space-evenly;
+      width: 100%;
 
       .list {
         text-decoration: none;

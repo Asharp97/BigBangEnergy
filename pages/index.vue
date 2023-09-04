@@ -1,15 +1,17 @@
 <template>
   <div class="gap">
-    <!-- <hero />
-    <aboutus />
+    <swipe />
+    <!-- <aboutus />
     <vitaminler />
     <vitamincontent />
     <prodport />
     <shampoo /> -->
+    <!-- comment -->
 
     <img src="../assets/temporary/vitamins.png" alt="">
     <img src="../assets/temporary/vitaminsdrink.png" alt="">
     <img src="../assets/temporary/Shampoo.png" alt="">
+    <!-- DELETE THIS -->
   </div>
 </template>
 

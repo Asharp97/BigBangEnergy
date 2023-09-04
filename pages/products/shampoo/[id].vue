@@ -59,8 +59,8 @@ export default {
     width: 30%;
 
     img {
-      width: 100%;
-      transform: scale(1.5);
+      width: 80%;
+      // transform: scale(0.5);
     }
   }
 
