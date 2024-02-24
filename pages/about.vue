@@ -19,9 +19,9 @@
         </div>
       </div>
     </div>
-    <img class="onlyMob"
+    <nuxt-img class="onlyMob"
       src="https://drscdn.500px.org/photo/1074447313/m%3D900/v2?sig=c46655947cfb62114ebab57bfa6f6438bc98ac4d0e9dd907505f03e0eee490a3"
-      alt="">
+      alt="" />
     <div class="section">
       <div class="lists ">
         <div class="container lists">

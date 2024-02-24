@@ -2,7 +2,7 @@
   <div class="container">
     <div class="prod section" :style="`color:${shampoos[id - 1].color}`">
       <div class="imgdiv">
-        <img :src="`http://bigbang-energy.com.tr/prodImages/shampoos/${id}.png`" alt="">
+        <img :src="`http://bigbang-energy.com.tr/prodImages/shampoos/${id}.png`" alt="" />
       </div>
       <div class="textdiv">
         <div class="header">
@@ -172,4 +172,5 @@ export default {
       }
     }
   }
-}</style>
+}
+</style>

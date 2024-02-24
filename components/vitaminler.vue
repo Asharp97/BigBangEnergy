@@ -9,10 +9,10 @@
       <p class=" rev">Biz, sağlığınıza değer katmak için en iyisini sunmaya kararlıyız. Tüm vitaminlerimiz, doğal
         kaynaklardan elde edilerek üretilir ve en yüksek kalite standartlarına uygun bir şekilde formüle edilir. Sizin
         için en iyisini sunabilmek adına, vitaminlerimiz uzman ekibimiz tarafından titizlikle incelenir ve onaylanır.</p>
-      <img src="../assets\plant2.png" class="plant2" alt="">
+      <nuxt-img src="\plant2.png" class="plant2" alt="" />
     </div>
     <div class="imgdiv">
-      <img src="../assets/vitamins.png" alt="">
+      <nuxt-img src="vitamins.png" alt="" />
     </div>
   </div>
 </template>

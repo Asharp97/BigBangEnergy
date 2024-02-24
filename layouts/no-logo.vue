@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbarNoLogo />
+    <navbar :logo="false" />
     <slot />
     <footerbar />
   </div>

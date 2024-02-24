@@ -1,68 +1,51 @@
 <template>
-  <swiper class="swiper" :modules="modules" :slides-per-view="1" :space-between="0" navigation :speed="800" :loop="true"
+  <Swiper class="swiper" :modules="modules" :slides-per-view="1" :space-between="0" navigation :speed="800" :loop="true"
     @slideNextTransitionStart="nextstart" @slidePrevTransitionStart="prevstart" @slideNextTransitionEnd="nextend"
     @slidePrevTransitionEnd="prevend">
-    <swiper-slide class="strawberry slide">
+    <SwiperSlide class="strawberry slide">
       <div class="content">
 
         <img class="prod" src="http://bigbang-energy.com.tr/prodImages/drinks/6.png" alt="strawberry vitamin drink">
         <NuxtLink to="/products/drink/6"><button>
-            <span class="left">ÜRÜNÜ</span> <span class="right">GÖR</span>
+            ÜRÜNÜ GÖR
           </button></NuxtLink>
       </div>
-      <img class="one texture float " src="../assets/textures/strawberry.png" />
-      <img class="two texture float" src="../assets/textures/strawberry.png" />
-      <img class="three texture  " src="../assets/textures/strawberry.png" />
-      <img class="four texture float" src="../assets/textures/strawberry.png" />
-      <img class="five texture " src="../assets/textures/leaf.png" />
-      <img class="six texture float" src="../assets/textures/leaf.png" />
-      <img class="seven texture float" src="../assets/textures/leaf.png" />
-      <img class="eight texture float" src="../assets/textures/leaf.png" />
-      <img class="nine texture " src="../assets/textures/leaf.png" />
-      <img class="ten texture float" src="../assets/textures/leaf.png" />
 
-    </swiper-slide>
-    <swiper-slide class="vitamin slide">
+      <nuxt-img class="texture float" v-for="n in 4" :class="`texture${n}`" src="textures/strawberry.png" width="500" />
+      <nuxt-img class="texture float" v-for="n in 6" :class="`texture${n + 4}`" src="textures/leaf.png" width="500" />
+    </SwiperSlide>
+
+    <SwiperSlide class="vitamin slide">
       <div class="content">
         <img class="prod" src="http://bigbang-energy.com.tr/prodImages/1.png" alt="sambucus vitamin">
-        <NuxtLink to="/products/1"><button><span class="left">ÜRÜNÜ</span> <span class="right">GÖR</span></button>
+        <NuxtLink to="/products/1"><button>ÜRÜNÜ GÖR</button>
         </NuxtLink>
       </div>
-      <img class="one texture float" src="../assets/textures/pil.png" style="scale:0.5" />
-      <img class="two texture" src="../assets/textures/pil.png" style="scale:0.5" />
-      <img class="three texture float" src="../assets/textures/pil.png" style="scale:0.5" />
-      <img class="four texture" src="../assets/textures/pil.png" style="scale:0.5" />
-      <img class="five texture float" src="../assets/textures/blueberry.png" />
-      <img class="six texture" src="../assets/textures/blueberry.png" />
-      <img class="seven texture float" src="../assets/textures/blueberry.png" />
-      <img class="eight texture float" src="../assets/textures/blueberry.png" />
-      <img class="nine texture" src="../assets/textures/blueberry.png" />
-      <img class="ten texture float" src="../assets/textures/blueberry.png" />
-    </swiper-slide>
-    <swiper-slide class="shampoo slide">
+
+      <nuxt-img class="texture float" v-for="n in 4" :class="`texture${n}`" src="textures/pil.png" width="500"
+        style="scale:0.5" />
+      <nuxt-img class="texture float" v-for="n in 6" :class="`texture${n + 4}`" src="textures/blueberry.png"
+        width="500" />
+    </SwiperSlide>
+
+    <SwiperSlide class="shampoo slide">
       <div class="content">
         <img class="prod" src="http://bigbang-energy.com.tr/prodImages/shampoos/1.png" alt="jasmin shampoo">
-        <NuxtLink to="/products/shampoo/1"><button><span class="left">ÜRÜNÜ</span> <span class="right">GÖR</span></button>
+        <NuxtLink to="/products/shampoo/1">
+          <button> ÜRÜNÜ GÖR
+          </button>
         </NuxtLink>
       </div>
-      <img class="one texture" src="../assets/textures/jasmin.png" style="scale:0.5" />
-      <img class="two texture" src="../assets/textures/jasmin.png" style="scale:0.5" />
-      <img class="three texture float" src="../assets/textures/jasmin.png" style="scale:0.5" />
-      <img class="four texture float" src="../assets/textures/jasmin.png" style="scale:0.5" />
-      <img class="five texture float" src="../assets/textures/jasmin.png" />
-      <img class="six texture" src="../assets/textures/jasmin.png" />
-      <img class="seven texture" src="../assets/textures/jasmin.png" />
-      <img class="eight texture float" src="../assets/textures/jasmin.png" />
-      <img class="nine texture" src="../assets/textures/jasmin.png" />
-      <img class="ten texture" src="../assets/textures/jasmin.png" />
-    </swiper-slide>
-  </swiper>
-</template>
-<script>
-// import Swiper core and required modules
-import { Navigation, Scrollbar, A11y } from 'swiper/modules';
 
-// Import Swiper Vue.js components
+      <nuxt-img class="texture float" v-for="n in 4" :class="`texture${n}`" src="textures/jasmin.png" width="500"
+        style="scale:0.5" />
+      <nuxt-img class="texture float" v-for="n in 6" :class="`texture${n + 4}`" src="textures/jasmin.png" width="500" />
+    </SwiperSlide>
+  </Swiper>
+</template>
+
+<script>
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
@@ -136,7 +119,7 @@ export default {
       nextend,
       prevstart,
       prevend,
-      modules: [Navigation, Scrollbar, A11y],
+      modules: [Navigation],
     };
   },
 };
@@ -148,7 +131,7 @@ export default {
   .swiper-wrapper {
     width: 100%;
 
-    .swiper-slide {
+    .SwiperSlide {
       width: 100% !important;
       height: 500px;
       // cursor: pointer;
@@ -190,12 +173,8 @@ export default {
           &:active {
             color: #e0d8d8;
 
-            .left,
-            .right {
-              transition: 300ms;
-            }
 
-            .left {
+            span {
               transition-delay: 300ms;
             }
           }
@@ -209,7 +188,8 @@ export default {
       .texture {
         position: absolute;
         transition: 330ms;
-        z-index: -100;
+        display: flex;
+        z-index: 1;
       }
 
       .nextStart,
@@ -225,7 +205,7 @@ export default {
       }
 
       .prevStart {
-        animation-name: prev;
+        animation: next reverse;
       }
 
       .nextObj {
@@ -233,7 +213,7 @@ export default {
       }
 
       .prevObj {
-        animation: prevObj 650ms ease-in-out;
+        animation: nextObj 650ms ease-in-out reverse;
       }
 
       .float {
@@ -242,7 +222,7 @@ export default {
         animation-direction: alternate;
       }
 
-      .one {
+      .texture1 {
         transition-delay: 200ms;
         animation-delay: 20ms;
         top: 20%;
@@ -251,7 +231,7 @@ export default {
         rotate: 30deg;
       }
 
-      .two {
+      .texture2 {
         transition-delay: 100ms;
         animation-delay: 10ms;
         top: 18%;
@@ -260,7 +240,7 @@ export default {
         rotate: -67deg;
       }
 
-      .three {
+      .texture3 {
         transition-delay: 150ms;
         animation-delay: 15ms;
         top: 64%;
@@ -269,7 +249,7 @@ export default {
         rotate: 1deg;
       }
 
-      .four {
+      .texture4 {
         transition-delay: 250ms;
         animation-delay: 25ms;
         top: 61%;
@@ -278,7 +258,7 @@ export default {
         rotate: 120deg;
       }
 
-      .five {
+      .texture5 {
         transition-delay: 175ms;
         animation-delay: 50ms;
         top: 40%;
@@ -287,7 +267,7 @@ export default {
         rotate: 0deg;
       }
 
-      .six {
+      .texture6 {
         transition-delay: 125ms;
         animation-delay: 25ms;
         top: 60%;
@@ -296,7 +276,7 @@ export default {
         rotate: -48deg;
       }
 
-      .seven {
+      .texture7 {
         transition-delay: 75ms;
         animation-delay: 75ms;
         top: 27%;
@@ -305,7 +285,7 @@ export default {
         rotate: -140deg;
       }
 
-      .eight {
+      .texture8 {
         transition-delay: 150ms;
         animation-delay: 15ms;
         top: 14%;
@@ -314,7 +294,7 @@ export default {
         rotate: -100deg;
       }
 
-      .nine {
+      .texture9 {
         transition-delay: 250ms;
         animation-delay: 25ms;
         top: 50%;
@@ -323,7 +303,7 @@ export default {
         rotate: -283deg;
       }
 
-      .ten {
+      .texture10 {
         transition-delay: 225ms;
         animation-delay: 22ms;
         top: 15%;
@@ -334,7 +314,7 @@ export default {
 
     }
 
-    .swiper-slide-active {
+    .SwiperSlide-active {
 
       .texture,
       .anim {
@@ -403,7 +383,7 @@ export default {
   }
 
   50% {
-    transform: rotate(3deg);
+    transform: rotate(-3deg);
     translate: 5px 6px;
   }
 
@@ -427,20 +407,6 @@ export default {
   }
 }
 
-@keyframes prev {
-  0% {
-    translate: 0 0;
-  }
-
-  50% {
-    translate: -500px 0;
-  }
-
-  100% {
-    translate: 0 0;
-  }
-}
-
 @keyframes nextObj {
   0% {
     translate: 0 0;
@@ -455,23 +421,6 @@ export default {
     translate: 0 0;
   }
 }
-
-@keyframes prevObj {
-  0% {
-    translate: 0 0;
-  }
-
-  50% {
-    translate: 200px 0px;
-    scale: 0.95;
-  }
-
-  100% {
-    translate: 0 0;
-  }
-}
-
-
 
 @media only screen and (max-width:480px) {
   @keyframes float {

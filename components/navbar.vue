@@ -29,7 +29,7 @@
     </div>
     <div class="bot container">
       <header>
-        <NuxtLink to="/"><img class="logo" src="../assets/logo.png" alt=""></NuxtLink>
+        <NuxtLink to="/"><nuxt-img class="logo" src="logo.png" alt="" v-if="logo" /></NuxtLink>
         <ul>
           <NuxtLink class="list" to="/commercial">
             <div class="list" @click="sideMenu = false"> Kurumsal</div>
@@ -55,7 +55,7 @@
   <div class="mobNav">
     <NuxtLink to="/">
 
-      <img src="../assets/whiteLogo.png" alt="" class="logo">
+      <nuxt-img src="whiteLogo.png" alt="" class="logo" />
     </NuxtLink>
     <Icon name="solar:hamburger-menu-linear" class="icon" @click="sideMenu = true" v-if="!sideMenu" />
     <Icon name="solar:close-circle-outline" class="icon black" @click="sideMenu = false" v-else />
@@ -86,14 +86,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      sideMenu: false,
-    }
-  }
-}
+<script setup>
+defineProps(['logo'])
+const sideMenu = ref(false)
 </script>
 
 <style lang="scss" scoped>
@@ -214,6 +209,7 @@ export default {
     opacity: 0;
     visibility: hidden;
     transition: 300ms;
+    z-index: 2;
 
     ul {
       width: 0;

@@ -1,7 +1,7 @@
 <template>
-  <!-- <div class="prod container">
+  <div class="prod container">
     <div class="section hero">
-      <img src="../../assets/prodfam.png" alt="">
+      <nuxt-img src="prodfam.png" alt="" />
       <h4>BigBang Energy</h4>
       <p>BigBang Energy olarak, müşterilerimize en kaliteli vitaminleri sunmayı taahhüt ediyoruz. Ürünlerimiz doğal
         içeriklerle formüle edilir ve her biri sağlık uzmanları tarafından titizlikle incelenir. Sağlığınızı desteklemek
@@ -23,7 +23,7 @@
           <NuxtLink :to="`/products/${vitamin.id}`">
             <div class="card">
               <div class="imgBg thumb">
-                <img :src="`http://bigbang-energy.com.tr/prodImages/${vitamin.id}.png`" alt="">
+                <img :src="`http://bigbang-energy.com.tr/prodImages/${vitamin.id}.png`" alt="" />
                 <div class="icon">
                   <Icon name="ph:magnifying-glass-light" />
                 </div>
@@ -44,7 +44,7 @@
           <NuxtLink :to="`/products/drink/${drink.id}`">
             <div class="card">
               <div class="drinkbg thumb" :style="`Background: linear-gradient(180deg, ${drink.color} 60%, #fff 100%);`">
-                <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${drink.id}.png`" alt="">
+                <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${drink.id}.png`" alt="" />
                 <div class="icon">
                   <Icon name="ph:magnifying-glass-light" />
                 </div>
@@ -66,7 +66,7 @@
             <div class="card">
               <div class="shampoobg thumb"
                 :style="`Background: linear-gradient(180deg, ${shampoo.color} 60%, #fff 100%);`">
-                <img :src="`http://bigbang-energy.com.tr/prodImages/shampoos/${shampoo.id}.png`" alt="">
+                <img :src="`http://bigbang-energy.com.tr/prodImages/shampoos/${shampoo.id}.png`" alt="" />
                 <div class="icon">
                   <Icon name="ph:magnifying-glass-light" />
                 </div>
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-  </div> -->
+  </div>
   <!-- comment -->
 </template>
 

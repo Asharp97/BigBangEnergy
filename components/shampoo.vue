@@ -15,7 +15,7 @@
         çıkmanıza yardımcı olur.</p>
     </div>
     <div class="imgdiv">
-      <img src="../assets/shampoo.png" alt="">
+      <nuxt-img src="shampoo.png" alt="" />
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="contact rev">
       <div class="image">
-        <img src="../assets/whiteLogo.png" alt="">
+        <nuxt-img src="whiteLogo.png" alt="" />
       </div>
       <div class="content">
         <div class="col">

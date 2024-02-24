@@ -8,7 +8,7 @@
       </p>
       <div class="stepComp">
 
-        <img src="../assets\before.png" style="width:25px;" alt="" class="before">
+        <nuxt-img src="before.png" style="width:25px;" alt="" class="before" />
         <div class="steps">
           <div class="step">Gıda güvenliği ve lezzeti bir araya getiren ürünlerimizle, damak zevkinizi tatmin etmeyi
             hedefliyoruz.
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="imgdiv">
-      <img src="../assets/prodport.png" alt="">
+      <nuxt-img src="prodport.png" alt="" />
     </div>
   </div>
 </template>

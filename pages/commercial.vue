@@ -70,12 +70,12 @@
           bilinçlendirmek.</p>
       </div>
       <div class="imgdiv">
-        <img src="../assets/plant.png" alt="">
+        <nuxt-img src="plant.png" alt="" class="img" />
       </div>
     </div>
     <div class="h4 comp container">
       <div class="imgdiv">
-        <img src="../assets/scientest.png" alt="">
+        <nuxt-img src="scientest.png" class="img" alt="" />
       </div>
       <div class="textdiv">
 
@@ -179,7 +179,7 @@ export default {
     &:before {
       content: '';
       position: absolute;
-      top: 14px;
+      top: 16px;
       left: 7px;
       height: 12px;
       width: 12px;
@@ -195,6 +195,7 @@ export default {
 .h4 {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 
   .textdiv {
     width: 40%;
@@ -218,6 +219,7 @@ export default {
     height: 100%;
     display: flex;
     align-items: center;
+    gap: 40px;
 
     .textdiv {
       padding: 30px;
@@ -241,6 +243,15 @@ export default {
 
       }
     }
+
+  }
+}
+
+.imgdiv {
+  flex-grow: 1;
+
+  .img {
+    width: 100%;
   }
 }
 
@@ -266,23 +277,27 @@ h2 {
 }
 
 @media only screen and (max-width : 480px) {
-  .h2 .li{
+  .h2 .li {
     margin-inline: 2px;
     text-align: start;
   }
-  .ps p{
+
+  .ps p {
     padding-inline: 0px !important;
   }
+
   .h1-bg {
     background-position: -29rem;
   }
-  .h5-bg{
+
+  .h5-bg {
     height: 500px;
 
   }
-  .whitebg{
+
+  .whitebg {
     height: 69%;
-    
+
   }
 
   .h1 {
@@ -306,12 +321,12 @@ h2 {
     width: 80%;
     margin-inline: auto;
 
-    img {
+    .img {
       width: 100%;
     }
   }
 
-  .textdiv{
+  .textdiv {
     margin-inline: auto;
     width: 96% !important;
     margin-block: 12px;

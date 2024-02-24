@@ -1,11 +1,12 @@
 <template>
   <div class="container comp">
-    <img src="../assets/kid1.png" class="kid1" alt="">
+    <nuxt-img src="kid1.png" class="kid1" alt="" />
     <div class="textdiv">
       <h3>Vitaminli İçecekler</h3>
       <div class="content">
 
-        <p>Günümüzde sağlıklı beslenme ve aktif yaşam tarzı, sağlığımızı koruma ve zindeliğimizi sürdürme konusunda büyük
+        <p>Günümüzde sağlıklı beslenme ve aktif yaşam tarzı, sağlığımızı koruma ve zindeliğimizi sürdürme konusunda
+          büyük
           önem taşımaktadır. Dengeli bir diyetin yanı sıra vücudumuzun ihtiyaç duyduğu vitamin ve mineralleri almak da
           yaşam
           kalitemizi yükseltir. İşte bu noktada, vitaminli içecekler, vücudumuza doğal bir enerji kaynağı sağlamak için
@@ -18,12 +19,12 @@
         </p>
       </div>
       <NuxtLink class="button" to="/products">
-      <div >
+        <div>
           Vitaminli İçecekleri Keşfet
         </div>
       </NuxtLink>
     </div>
-    <img src="../assets/kid2.png" class="kid2" alt="">
+    <nuxt-img src="kid2.png" class="kid2" alt="" />
   </div>
 </template>
 

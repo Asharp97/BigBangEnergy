@@ -4,13 +4,13 @@
       Privat Label üretim yapılır. Detaylı bilgi için iletişime geçiniz.
     </div>
     <div class="mobLogo">
-      <img src="../assets/logo.png" alt="">
+      <nuxt-img src="logo.png" alt="" />
     </div>
     <div class="top container">
 
 
       <div class="section bet">
-        <img src="../assets/logo.png" alt="">
+        <nuxt-img src="logo.png" alt="" />
         <span>© Big Bang Energy 2023 <br> All rights reserved </span>
       </div>
 

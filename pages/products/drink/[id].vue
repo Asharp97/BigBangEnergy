@@ -1,31 +1,32 @@
 <template>
   <div class="container">
-    <div class="prod section" :style="`color:${drinks[id-1].color}`">
+    <div class="prod section" :style="`color:${drinks[id - 1].color}`">
       <div class="imgdiv">
-        <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${id}.png`" alt="">
+        <img :src="`http://bigbang-energy.com.tr/prodImages/drinks/${id}.png`" alt="" />
       </div>
       <div class="textdiv">
         <div class="header">
-          <h1 :style="`border-bottom: ${drinks[id-1].color} 1px solid;`">
-            {{ drinks[id-1].name }}
+          <h1 :style="`border-bottom: ${drinks[id - 1].color} 1px solid;`">
+            {{ drinks[id - 1].name }}
           </h1>
         </div>
         <div class="subheader">
-          <h2 :style="`border-bottom: ${drinks[id-1].color} 1px solid;`">
+          <h2 :style="`border-bottom: ${drinks[id - 1].color} 1px solid;`">
             VİTAMİNLİ İÇECEK
           </h2>
         </div>
         <div class="bottom">
           <div class="l">
-            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-1.png`" alt="">
+            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-1.png`" alt="" />
           </div>
           <div class="r">
             <div class="rt">
-              <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-2.png`" alt="">
+              <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/drinks/tables/${id}-2.png`"
+                alt="" />
 
             </div>
             <div class="rb">
-              <p> {{ drinks[id-1].notes }} </p>
+              <p> {{ drinks[id - 1].notes }} </p>
             </div>
           </div>
         </div>

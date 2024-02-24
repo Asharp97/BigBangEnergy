@@ -1,30 +1,28 @@
 <template>
   <div class="gap">
     <swipe />
-    <!-- <aboutus />
+    <aboutus />
     <vitaminler />
     <vitamincontent />
     <prodport />
-    <shampoo /> -->
+    <shampoo />
     <!-- comment -->
 
-    <img src="../assets/temporary/vitamins.png" alt="">
-    <img src="../assets/temporary/vitaminsdrink.png" alt="">
-    <img src="../assets/temporary/Shampoo.png" alt="">
+    <!-- <nuxt-img src="temporary/vitamins.png" alt=""/>
+    <nuxt-img src="temporary/vitaminsdrink.png" alt=""/>
+    <nuxt-img src="temporary/Shampoo.png" alt=""/> -->
     <!-- DELETE THIS -->
   </div>
 </template>
 
 <script setup>
-definePageMeta({
-  layout: 'index'
-})
+definePageMeta({ layout: 'no-logo' })
 </script>
 
 <style lang="scss" scoped>
 @media only screen and (max-width:480px) {
   .gap {
-    width: 100%;
+    // width: 100%;
   }
 }
 </style>

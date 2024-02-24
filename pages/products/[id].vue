@@ -3,7 +3,7 @@
     <div class="prod section">
 
       <div class="imgdiv">
-        <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="">
+        <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="" />
 
       </div>
       <div class="textdiv">
@@ -32,7 +32,7 @@
         <div class="content section" v-if="!vitamins[id - 1].details">
           <div class="table">
 
-            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="">
+            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="" />
 
             <div class="disclaimer">
               <p>
@@ -57,7 +57,7 @@
         <h1> İçerikler </h1>
       </div>
       <div class="table">
-        <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="">
+        <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="" />
         <div class="disclaimer">
           <p>
             Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği (29960 sayılı mükerrer / 26.01.2017 tarihli Resmi
@@ -207,35 +207,41 @@ export default {
     }
   }
 }
+
 @media only screen and (max-width : 480px) {
-  .prod{
+  .prod {
     flex-direction: row-reverse;
     margin-block: 30px;
-    .content{
-    }
-    .imgdiv{
+
+    .content {}
+
+    .imgdiv {
       height: fit-content;
       float: left;
     }
-    
+
   }
-  h1{
+
+  h1 {
     font-size: 20px !important;
     margin-block: 12px;
   }
-  .container{
+
+  .container {
     width: 96%;
   }
-  .table{
+
+  .table {
     flex-wrap: wrap;
     justify-content: center !important;
-    gap: 12px
-    ;
-    .tableContent{
+    gap: 12px;
+
+    .tableContent {
       width: 80%;
     }
   }
-  .secondImg{
+
+  .secondImg {
     display: none;
   }
 }
