@@ -35,10 +35,10 @@
             <div class="list" @click="sideMenu = false"> Kurumsal</div>
           </NuxtLink>
 
-          <!-- <NuxtLink class="list" to="/products">
+          <NuxtLink class="list" to="/products">
             <div class="list" @click="sideMenu=false"> Ürünlerimiz
             </div>
-          </NuxtLink> -->
+          </NuxtLink>
           <!-- Products Deleted -->
 
 
@@ -70,11 +70,10 @@
         <div class="list" @click="sideMenu = false"> Kurumsal</div>
       </NuxtLink>
 
-      <!-- <NuxtLink class="list" to="/products">
-            <div class="list" @click="sideMenu=false"> Ürünlerimiz
-            </div>
-          </NuxtLink> -->
-      <!-- Products Deleted -->
+      <NuxtLink class="list" to="/products">
+        <div class="list" @click="sideMenu = false"> Ürünlerimiz </div>
+      </NuxtLink>
+      <!--  Products Deleted -->
 
       <NuxtLink class="list" to="/about">
         <div class="list" @click="sideMenu = false"> Üretim Portöyümüz</div>
