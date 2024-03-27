@@ -100,7 +100,7 @@
     <div class="section colors">
       <div class="color container">
         <div class=" whitebg">
-          <h1>Kozmetik Üretim</h1>
+          <h4>Kozmetik Üretim</h4>
           <p>Kişisel bakım, temizlik ürünleri,dermokozmetik’ten diş macununa kadar 1500 den fazla ürün gamına üretim
             yapılmaktadır.</p>
         </div>

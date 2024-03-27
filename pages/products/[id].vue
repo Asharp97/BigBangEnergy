@@ -3,7 +3,9 @@
     <div class="prod section">
 
       <div class="imgdiv">
-        <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="" />
+        <!-- <img :src="`http://bigbang-energy.com.tr/products/${id}.png`" alt="" /> -->
+
+        <nuxt-img class="img" :src="`products/${id}.png`" />
 
       </div>
       <div class="textdiv">
@@ -32,13 +34,13 @@
         <div class="content section" v-if="!vitamins[id - 1].details">
           <div class="table">
 
-            <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="" />
+            <!-- <img class="tableContent" :src="`http://bigbang-energy.com.tr/products/tables/${id}.png`" alt="" /> -->
+            <nuxt-img class="img tableContent" :src="`products/tables/${id}.svg`" />
 
             <div class="disclaimer">
               <p>
                 Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği (29960 sayılı mükerrer / 26.01.2017 tarihli
-                Resmi
-                Gazete yayını)
+                Resmi Gazete yayını)
               </p>
               <p>
                 **BRD: Beslenme Referans Değeri
@@ -57,7 +59,8 @@
         <h1> İçerikler </h1>
       </div>
       <div class="table">
-        <img class="tableContent" :src="`http://bigbang-energy.com.tr/prodImages/tables/${id}.png`" alt="" />
+        <!-- <img class="tableContent" :src="`http://bigbang-energy.com.tr/products/tables/${id}.png`" alt="" /> -->
+        <nuxt-img class="img tableContent" :src="`products/tables/${id}.svg`" />
         <div class="disclaimer">
           <p>
             Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği (29960 sayılı mükerrer / 26.01.2017 tarihli Resmi
@@ -71,14 +74,15 @@
           </p>
         </div>
         <div class="imgdiv">
-          <img :src="`http://bigbang-energy.com.tr/prodImages/${id}.png`" alt="" class="secondImg">
+          <!-- <img :src="`http://bigbang-energy.com.tr/products/${id}.png`" alt="" class="secondImg"> -->
+          <nuxt-img class="img secondImg" :src="`products/${id}.png`" />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script >
+<script>
 import data from "../../assets/products.json"
 // const { id } = useRoute().params
 
@@ -103,9 +107,12 @@ export default {
 
   .imgdiv {
     width: 30%;
+    max-width: 600px;
 
-    img {
+    .img {
+      max-height: 700px;
       width: 100%;
+      object-fit: contain;
     }
   }
 
@@ -178,6 +185,8 @@ export default {
 
     .tableContent {
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      max-width: 300px;
     }
 
     .disclaimer {
@@ -201,7 +210,7 @@ export default {
     .imgdiv {
       width: 300px;
 
-      img {
+      .img {
         width: 100%;
       }
     }
@@ -237,7 +246,7 @@ export default {
     gap: 12px;
 
     .tableContent {
-      width: 80%;
+      // width: 80%;
     }
   }
 

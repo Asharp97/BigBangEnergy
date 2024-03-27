@@ -16,7 +16,6 @@
 </template>
 
 <script setup>
-definePageMeta({ layout: 'no-logo' })
 </script>
 
 <style lang="scss" scoped>

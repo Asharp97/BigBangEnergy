@@ -5,7 +5,7 @@
     <SwiperSlide class="strawberry slide">
       <div class="content">
 
-        <img class="prod" src="http://bigbang-energy.com.tr/prodImages/drinks/6.png" alt="strawberry vitamin drink">
+        <nuxt-img class="prod" src="products/drinks/6.png" alt="strawberry vitamin drink" />
         <NuxtLink to="/products/drink/6"><button>
             ÜRÜNÜ GÖR
           </button></NuxtLink>
@@ -17,7 +17,7 @@
 
     <SwiperSlide class="vitamin slide">
       <div class="content">
-        <img class="prod" src="http://bigbang-energy.com.tr/prodImages/1.png" alt="sambucus vitamin">
+        <nuxt-img class="prod" src="products/1.png" alt="sambucus vitamin" />
         <NuxtLink to="/products/1"><button>ÜRÜNÜ GÖR</button>
         </NuxtLink>
       </div>
@@ -30,7 +30,7 @@
 
     <SwiperSlide class="shampoo slide">
       <div class="content">
-        <img class="prod" src="http://bigbang-energy.com.tr/prodImages/shampoos/1.png" alt="jasmin shampoo">
+        <nuxt-img class="prod" src="products/shampoos/1.png" alt="jasmin shampoo" />
         <NuxtLink to="/products/shampoo/1">
           <button> ÜRÜNÜ GÖR
           </button>

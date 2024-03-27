@@ -48,7 +48,6 @@
       <NuxtLink to="/contact">
         <div class="section contact">
           <h2>İletişim</h2>
-          <h4>Mail Adresin</h4>
           <input class="input" placeholder="Mail Adresin" />
           <div class="button">İletişime Geç</div>
         </div>

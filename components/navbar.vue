@@ -29,7 +29,7 @@
     </div>
     <div class="bot container">
       <header>
-        <NuxtLink to="/"><nuxt-img class="logo" src="logo.png" alt="" v-if="logo" /></NuxtLink>
+        <NuxtLink to="/"><nuxt-img class="logo" src="logo.png" alt=""/></NuxtLink>
         <ul>
           <NuxtLink class="list" to="/commercial">
             <div class="list" @click="sideMenu = false"> Kurumsal</div>
@@ -86,7 +86,6 @@
 </template>
 
 <script setup>
-defineProps(['logo'])
 const sideMenu = ref(false)
 </script>
 
